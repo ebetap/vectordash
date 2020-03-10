@@ -1,0 +1,35 @@
+{
+  "name": "next-boilerplate",
+  "version": "1.0.0",
+  "description": "Next.js Boilerplate with TailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Beta Priyoko <beta@softwareseni.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "js-cookie": "^2.2.1",
+    "little-state-machine": "^2.11.3",
+    "next": "^9.2.2",
+    "next-cookies": "^2.0.3",
+    "next-redux-wrapper": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-hook-form": "^5.0.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "use-position": "^0.0.6",
+    "yup": "^0.28.3"
+  },
+  "devDependencies": {}
+}
