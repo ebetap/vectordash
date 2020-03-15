@@ -1,5 +1,7 @@
 import { Button, Input } from '../components/Base';
 
+import Styles from './index.scss';
+
 const Homepage = () => {
   const status = {
     name: 'a'
@@ -8,11 +10,7 @@ const Homepage = () => {
     <div>
       <Button>Test</Button>
       <Input type='text' />
-      {status?.name && (
-        <h1 className='p-4 bg-purple-300 text-center text-lg'>
-          Hello Tailwind
-        </h1>
-      )}
+      {status?.name && <h1 className={Styles.hello}>Hello Tailwind</h1>}
     </div>
   );
 };

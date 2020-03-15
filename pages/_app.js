@@ -5,6 +5,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import withRedux from 'next-redux-wrapper';
 
 import reduxStore from '../redux';
+import '../themes/theme.scss';
 
 class NextApplication extends App {
   static async getInitialProps({ Component, ctx }) {

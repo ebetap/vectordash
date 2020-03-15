@@ -27,6 +27,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
+    "url-loader": "^3.0.0",
     "use-position": "^0.0.6",
     "yup": "^0.28.3"
   },
