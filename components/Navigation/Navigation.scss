@@ -1,0 +1,14 @@
+.navigation {
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.logo {
+  max-width: 220px;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 1;
+}

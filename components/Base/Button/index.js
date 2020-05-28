@@ -1,13 +1,24 @@
-const Button = props => {
-  const { children, style, ...buttonProps } = props;
+import Styles from './Button.scss';
 
-  const classNames = [].join(' ');
+const Button = (props) => {
+  const { className, children, style, ...buttonProps } = props;
+
+  const classNames = [Styles.buttonBase, ...className]
+    .join(' ')
+    .split(' ')
+    .filter((cls) => cls != 'false')
+    .join(' ');
 
   return (
     <button className={classNames} style={{ ...style }} {...buttonProps}>
       {children}
     </button>
   );
+};
+
+Button.defaultProps = {
+  className: [],
+  style: {},
 };
 
 export default Button;
