@@ -1,5 +1,5 @@
 .sectionHeader {
-  padding-top: 110px;
+  padding-top: 140px;
   min-height: 100vh;
   background-image: linear-gradient(to top, #fbfdff, #e7f1ff);
 }
@@ -9,5 +9,12 @@
 }
 
 .ctaButton {
-  margin-top: 35px;
+  margin-top: 22px;
+}
+
+.pattern {
+  position: absolute;
+  width: 100%;
+  object-fit: contain;
+  bottom: -18vh;
 }

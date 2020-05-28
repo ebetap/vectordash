@@ -2,8 +2,8 @@
   z-index: 9999;
   width: 100%;
   top: 0;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .logo {
@@ -11,4 +11,8 @@
   cursor: pointer;
   transition: all 0.3s;
   opacity: 1;
+}
+
+.wrapperMenuItem {
+  margin-right: 20px;
 }

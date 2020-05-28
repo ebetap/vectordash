@@ -1,9 +1,23 @@
 import Styles from './Button.scss';
 
 const Button = (props) => {
-  const { className, children, style, ...buttonProps } = props;
+  const {
+    small,
+    medium,
+    large,
+    className,
+    children,
+    style,
+    ...buttonProps
+  } = props;
 
-  const classNames = [Styles.buttonBase, ...className]
+  const classNames = [
+    Styles.buttonBase,
+    small && Styles.buttonSmall,
+    medium && Styles.buttonMedium,
+    large && Styles.buttonLarge,
+    ...className,
+  ]
     .join(' ')
     .split(' ')
     .filter((cls) => cls != 'false')

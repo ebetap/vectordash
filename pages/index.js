@@ -9,6 +9,7 @@ const Homepage = () => {
   return (
     <DefaultLayout>
       <Block relative className={[Styles.sectionHeader]}>
+        <img className={Styles.pattern} src='/static/img/pattern.png' />
         <Container>
           <Block w100 className={[Styles.title]}>
             <Typography bigTitle textCenter>
@@ -26,7 +27,7 @@ const Homepage = () => {
               Duty, GTA V, Magic
             </Typography>
 
-            <Block flex justifyCenter alignCenter>
+            <Block flex justifyCenter alignCenter style={{ marginTop: '5px' }}>
               <Typography sourceSansPro textCenter size={22}>
                 Arena, and more on
               </Typography>

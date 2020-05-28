@@ -1,13 +1,13 @@
 .buttonBase {
-  min-width: 200px;
-  height: 55px;
+  min-width: max-content;
+  height: 54px;
   border-radius: 32px;
   box-shadow: 0 24px 30px 0 rgba(63, 23, 159, 0.18);
   background-image: linear-gradient(66deg, #804bff -65%, #804bff 116%);
   color: #ffffff;
   cursor: pointer;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -16,4 +16,5 @@
   color: #ffffff;
   border: 0;
   outline: none;
+  padding: 0 45px;
 }
