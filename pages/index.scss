@@ -52,3 +52,34 @@
 .sectionPrelist {
   margin-top: 110px;
 }
+
+.sectionGameList {
+  margin-top: 65px;
+}
+
+.customWrapperTab {
+  padding: 0;
+  width: unset;
+  min-width: 130px;
+  min-height: 50px;
+  margin-bottom: 40px;
+  margin-right: 15px;
+}
+
+.containerTab {
+  justify-content: flex-start;
+}
+
+.customLabel {
+  font-weight: 500;
+}
+
+.customLabelActive {
+  color: #ffffff !important;
+}
+
+.cardWrapperSizing {
+  max-width: 23%;
+  flex: 0 0 23%;
+  margin-bottom: 30px;
+}

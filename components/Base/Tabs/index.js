@@ -24,7 +24,18 @@ TabContent.defaultProps = {
 };
 
 export const Tabs = (props) => {
-  const { children, onTabClick, tabActive, tabContentWidth } = props;
+  const {
+    color,
+    children,
+    onTabClick,
+    tabActive,
+    tabsHeadCustomContainerClass,
+    tabsHeadCustomLabelWrapperClass,
+    tabsHeadCustomLabelClass,
+    tabsHeadLabelActiveClass,
+    tabsHeadAlign,
+    tabsHeadWidth,
+  } = props;
 
   const [activeTab, setActiveTab] = useState(
     tabActive || children[0].props.label
@@ -32,11 +43,20 @@ export const Tabs = (props) => {
 
   return (
     <Block w100>
-      <Block flex alignCenter justifyBetween className={[Styles.tabsHead]}>
+      <Block
+        flex
+        alignCenter
+        justifyBetween
+        className={[Styles.tabsHead, ...tabsHeadCustomContainerClass]}
+        style={{
+          marginLeft: tabsHeadAlign === 'left' ? 0 : 'auto',
+          maxWidth: `${tabsHeadWidth}%`,
+        }}>
         {children.map((child) => (
           <Block
             className={[
               Styles.tabHeadMenu,
+              ...tabsHeadCustomLabelWrapperClass,
               activeTab === child.props.label && Styles.tabHeadMenuActive,
             ]}
             onClick={() => {
@@ -44,8 +64,12 @@ export const Tabs = (props) => {
               setActiveTab(child.props.label);
             }}>
             <Typography
-              color={activeTab === child.props.label ? '#ffffff' : '#000000'}
-              className={[Styles.tabHeadLabel]}>
+              color={activeTab === child.props.label ? '#ffffff' : color}
+              className={[
+                Styles.tabHeadLabel,
+                ...tabsHeadLabelActiveClass,
+                ...tabsHeadCustomLabelClass,
+              ]}>
               {child.props.label}
             </Typography>
           </Block>
@@ -66,6 +90,13 @@ export const Tabs = (props) => {
 };
 
 Tabs.defaultProps = {
+  color: '#000000',
+  tabsHeadAlign: 'center',
+  tabsHeadLabelActiveClass: '',
+  tabsHeadCustomContainerClass: [],
+  tabsHeadCustomLabelWrapperClass: [],
+  tabsHeadCustomLabelClass: [],
+  tabsHeadWidth: 80,
   onTabClick: () => {},
   tabContentWidth: 30,
 };

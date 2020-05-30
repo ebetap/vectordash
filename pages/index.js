@@ -6,6 +6,7 @@ import { TabContent, Tabs } from '../components/Base/Tabs';
 import Container from '../components/Base/Container';
 
 import Styles from './index.scss';
+import GameCard from '../components/GameCard';
 
 const Homepage = () => {
   const [tabs] = useState([
@@ -23,6 +24,110 @@ const Homepage = () => {
     'RPG',
   ]);
   const [activeTab, setActiveTab] = useState('');
+  const [listGames, setListGames] = useState([
+    {
+      name: 'APEX Legends',
+      image: '/static/img/apex.png',
+      labels: [
+        {
+          label: 'RPG',
+          background: '#ffb820',
+        },
+      ],
+    },
+    {
+      name: 'Magic The Gathering Arena',
+      image: '/static/img/magic.png',
+      labels: [
+        {
+          label: 'Fighting',
+          background: '#00c6fa',
+        },
+        {
+          label: 'Action',
+          background: '#ff2f54',
+        },
+      ],
+    },
+    {
+      name: 'Rainbowsix',
+      image: '/static/img/siege.png',
+      labels: [
+        {
+          label: 'Action',
+          background: '#804bff',
+        },
+      ],
+    },
+    {
+      name: 'League of Legends',
+      image: '/static/img/league.png',
+      labels: [
+        {
+          label: 'Arcade',
+          background: '#ffb820',
+        },
+      ],
+    },
+    {
+      name: 'Overwatch',
+      image: '/static/img/overwatch.png',
+      labels: [
+        {
+          label: 'Fighting',
+          background: '#00c6fa',
+        },
+        {
+          label: 'Action',
+          background: '#ff2f54',
+        },
+      ],
+    },
+    {
+      name: 'PUBG',
+      image: '/static/img/pubg.png',
+      labels: [
+        {
+          label: 'Action',
+          background: '#ff2f54',
+        },
+      ],
+    },
+    {
+      name: 'Dota 2',
+      image: '/static/img/dota2.png',
+      labels: [
+        {
+          label: 'RPG',
+          background: '#ffb820',
+        },
+      ],
+    },
+    {
+      name: 'Magic The Gathering Arena',
+      image: '/static/img/magic.png',
+      labels: [
+        {
+          label: 'Fighting',
+          background: '#00c6fa',
+        },
+        {
+          label: 'Action',
+          background: '#ff2f54',
+        },
+      ],
+    },
+    {
+      name: 'APEX Legends',
+      image: '/static/img/apex.png',
+      labels: [
+        {
+          label: 'RPG',
+          background: '#ffb820',
+        },
+      ],
+    },
+  ]);
 
   return (
     <DefaultLayout>
@@ -251,6 +356,32 @@ const Homepage = () => {
               </Typography>
             </Block>
           </Block>
+        </Container>
+      </Block>
+
+      <Block className={[Styles.sectionGameList]}>
+        <Container>
+          <Tabs
+            small
+            tabsHeadAlign='left'
+            tabsHeadWidth={100}
+            color='#50628b'
+            tabsHeadCustomContainerClass={[Styles.containerTab]}
+            tabsHeadCustomLabelWrapperClass={[Styles.customWrapperTab]}
+            tabsHeadCustomLabelClass={[Styles.customLabel]}
+            tabsHeadLabelActiveClass={Styles.customLabelActive}>
+            {tabsBottom.map((tabB) => (
+              <TabContent label={tabB}>
+                <Block w100 flex wrap justifyBetween>
+                  {listGames.map((data) => (
+                    <Block relative className={[Styles.cardWrapperSizing]}>
+                      <GameCard data={data} />
+                    </Block>
+                  ))}
+                </Block>
+              </TabContent>
+            ))}
+          </Tabs>
         </Container>
       </Block>
     </DefaultLayout>
