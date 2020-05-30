@@ -1,4 +1,18 @@
 .footer {
-  padding: 30px;
-  padding-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.listItem {
+  max-width: 24%;
+  flex: 0 0 24%;
+
+  &:first-child {
+    max-width: 32%;
+    flex: 0 0 32%;
+  }
+}
+
+.logoBottom {
+  max-width: 220px;
 }
