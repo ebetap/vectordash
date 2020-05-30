@@ -5,11 +5,11 @@
 }
 
 .subTitle {
-  margin-top: 7px;
+  margin-top: 15px;
 }
 
 .ctaButton {
-  margin-top: 22px;
+  margin-top: 40px;
 }
 
 .pattern {
@@ -17,4 +17,38 @@
   width: 100%;
   object-fit: contain;
   bottom: -18vh;
+}
+
+.gamePreview {
+  position: absolute;
+  bottom: -215px;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inner {
+  position: relative;
+}
+
+.gameVideo {
+  border-radius: 15px;
+}
+
+.sectionEnjoy {
+  padding-top: 280px;
+}
+
+.tabsMenu {
+  margin-top: 80px;
+}
+
+.mockup {
+  position: absolute;
+  right: -325px;
+  top: -37px;
+}
+
+.sectionPrelist {
+  margin-top: 110px;
 }

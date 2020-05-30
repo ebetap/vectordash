@@ -26,6 +26,7 @@ const Block = (props) => {
 
   const classNames = [
     flex && Styles.flex,
+    w100 && Styles.w100,
     wrap && Styles.wrap,
     alignCenter && Styles.alignCenter,
     alignStart && Styles.alignStart,
@@ -73,6 +74,7 @@ Block.defaultProps = {
   relative: false,
   absolute: false,
   fixed: false,
+  w100: false,
   style: {},
   className: [],
 };

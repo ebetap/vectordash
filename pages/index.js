@@ -1,11 +1,29 @@
+import { useState } from 'react';
 import DefaultLayout from '../layouts/Default';
 
 import { Block, Typography, Button } from '../components/Base';
+import { TabContent, Tabs } from '../components/Base/Tabs';
 import Container from '../components/Base/Container';
 
 import Styles from './index.scss';
 
 const Homepage = () => {
+  const [tabs] = useState([
+    'Play the games you want',
+    'The most advanced cloud gaming solution',
+    'More than just cloud gaming',
+  ]);
+  const [tabsBottom] = useState([
+    'All Games',
+    'Action',
+    'Racing',
+    'Arcade',
+    'Fighting',
+    'Football',
+    'RPG',
+  ]);
+  const [activeTab, setActiveTab] = useState('');
+
   return (
     <DefaultLayout>
       <Block relative className={[Styles.sectionHeader]}>
@@ -45,6 +63,192 @@ const Homepage = () => {
 
             <Block flex justifyCenter w100 className={[Styles.ctaButton]}>
               <Button>Get Started</Button>
+            </Block>
+          </Block>
+        </Container>
+
+        <Block className={[Styles.gamePreview]}>
+          <Block className={[Styles.inner]}>
+            <iframe
+              className={Styles.gameVideo}
+              width='760'
+              height='480'
+              src='https://www.youtube-nocookie.com/embed/c0i88t0Kacs'
+              frameborder='0'
+              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+              allowfullscreen></iframe>
+          </Block>
+        </Block>
+      </Block>
+
+      <Block className={[Styles.sectionEnjoy]}>
+        <Container>
+          <Block flex alignCenter justifyCenter>
+            <Typography h1 color='#000000'>
+              ENJOY
+            </Typography>
+
+            <Typography h1 color='#804bff' style={{ marginLeft: '10px' }}>
+              OUR BEST FEATURES
+            </Typography>
+          </Block>
+
+          <Typography h1 color='#000000'>
+            WHEN PLAYING THE GAME
+          </Typography>
+
+          <Container width={45} style={{ marginTop: '15px' }}>
+            <Typography sourceSansPro textCenter size={20} height={30}>
+              Curabitur lobortis id lorem id bibendum Ut id consectetur magna
+              Quisque volutpat augue enim
+            </Typography>
+          </Container>
+
+          <Block className={[Styles.tabsMenu]} w100>
+            <Tabs>
+              {tabs.map((tab) => (
+                <TabContent label={tab}>
+                  <Block relative>
+                    <img
+                      src='/static/img/mockup.png'
+                      className={Styles.mockup}
+                    />
+                  </Block>
+                  <Block relative style={{ maxWidth: '45%' }}>
+                    <Typography h1 color='#000000' textLeft>
+                      The gaming rig you
+                    </Typography>
+
+                    <Typography h1 color='#000000' textLeft>
+                      deserve
+                    </Typography>
+
+                    <Typography
+                      size={20}
+                      height={15}
+                      sourceSansPro
+                      style={{ marginTop: '25px' }}>
+                      Shadow is a full-featured cloud PC with dedicated storage
+                    </Typography>
+
+                    <Typography
+                      size={20}
+                      height={15}
+                      sourceSansPro
+                      style={{ marginTop: '15px' }}>
+                      that you can access from any device at any
+                    </Typography>
+
+                    <Typography
+                      size={20}
+                      height={15}
+                      sourceSansPro
+                      style={{ marginTop: '15px' }}>
+                      time. Bring your own games with progress and
+                    </Typography>
+
+                    <Typography
+                      size={20}
+                      height={15}
+                      sourceSansPro
+                      style={{ marginTop: '15px' }}>
+                      achievements from Steam, Epic Games Store, GOG,
+                    </Typography>
+
+                    <Typography
+                      size={20}
+                      height={15}
+                      sourceSansPro
+                      style={{ marginTop: '15px' }}>
+                      Origin, Uplay, Battle.net, etc. or install new ones. Our
+                    </Typography>
+
+                    <Typography
+                      size={20}
+                      height={15}
+                      sourceSansPro
+                      style={{ marginTop: '15px' }}>
+                      datacenters are always up to date, so you can focus
+                    </Typography>
+
+                    <Typography
+                      size={20}
+                      height={15}
+                      sourceSansPro
+                      style={{ marginTop: '15px' }}>
+                      on gaming.
+                    </Typography>
+
+                    <Button outline small style={{ marginTop: '50px' }}>
+                      Pre-Order Now
+                    </Button>
+                  </Block>
+                </TabContent>
+              ))}
+            </Tabs>
+          </Block>
+        </Container>
+      </Block>
+
+      <Block className={[Styles.sectionPrelist]}>
+        <Container>
+          <Block flex>
+            <Block>
+              <Typography h1 color='#000000' textLeft>
+                PLAY THE LATEST GAMES
+              </Typography>
+
+              <Block flex>
+                <Typography h1 color='#000000' textLeft>
+                  AT 60 FPS
+                </Typography>
+
+                <Typography
+                  h1
+                  color='#804bff'
+                  style={{ marginLeft: '10px' }}
+                  textLeft>
+                  WITHOUT A
+                </Typography>
+              </Block>
+
+              <Typography h1 color='#804bff' textLeft>
+                GRAPHICS CARD
+              </Typography>
+            </Block>
+
+            <Block style={{ marginLeft: '50px' }}>
+              <Typography
+                size={20}
+                height={15}
+                sourceSansPro
+                style={{ marginTop: '15px' }}>
+                Don't buy the hardware, just buy the
+              </Typography>
+
+              <Typography
+                size={20}
+                height={15}
+                sourceSansPro
+                style={{ marginTop: '15px' }}>
+                games. Bring your own gaming accounts to
+              </Typography>
+
+              <Typography
+                size={20}
+                height={15}
+                sourceSansPro
+                style={{ marginTop: '15px' }}>
+                Vectordash and launch a game without a
+              </Typography>
+
+              <Typography
+                size={20}
+                height={15}
+                sourceSansPro
+                style={{ marginTop: '15px' }}>
+                graphics card!
+              </Typography>
             </Block>
           </Block>
         </Container>

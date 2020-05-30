@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Styles from './Navigation.scss';
 
 import Block from '../Base/Block';
@@ -6,8 +7,24 @@ import ButtonLink from '../Base/ButtonLink';
 import { Button } from '../Base';
 
 const Navigation = (props) => {
+  const [scrollPosition, setSrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setSrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Block fixed className={[Styles.navigation]}>
+    <Block
+      fixed
+      className={[Styles.navigation, scrollPosition > 80 && Styles.sticky]}>
       <Container>
         <Block flex justifyBetween alignCenter>
           <Block>

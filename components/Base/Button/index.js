@@ -4,6 +4,7 @@ const Button = (props) => {
   const {
     small,
     medium,
+    outline,
     large,
     className,
     children,
@@ -13,9 +14,10 @@ const Button = (props) => {
 
   const classNames = [
     Styles.buttonBase,
-    small && Styles.buttonSmall,
+    small && Styles.small,
     medium && Styles.buttonMedium,
     large && Styles.buttonLarge,
+    outline && Styles.outline,
     ...className,
   ]
     .join(' ')
@@ -33,6 +35,7 @@ const Button = (props) => {
 Button.defaultProps = {
   className: [],
   style: {},
+  outline: false,
 };
 
 export default Button;

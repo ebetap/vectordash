@@ -4,6 +4,7 @@ const Typography = (props) => {
   const {
     bigTitle,
     textCenter,
+    textLeft,
     height,
     bold,
     sourceSansPro,
@@ -24,9 +25,11 @@ const Typography = (props) => {
     bold && Styles.bold,
     sourceSansPro && Styles.sourceSansPro,
     textCenter && Styles.textCenter,
+    textLeft && Styles.textLeft,
     h1 && Styles.h1,
     h2 && Styles.h2,
     h3 && Styles.h3,
+    ...className,
   ]
     .join(' ')
     .split(' ')
