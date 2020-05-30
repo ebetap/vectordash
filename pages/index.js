@@ -384,6 +384,14 @@ const Homepage = () => {
           </Tabs>
         </Container>
       </Block>
+
+      <Block relative className={[Styles.sectionUnlimited]}>
+        <img
+          alt='Laptop Image'
+          src='/static/img/laptop.png'
+          className={Styles.laptopImage}
+        />
+      </Block>
     </DefaultLayout>
   );
 };
