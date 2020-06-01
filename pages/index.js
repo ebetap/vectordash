@@ -145,13 +145,13 @@ const Homepage = () => {
           </Block>
 
           <Block w100 className={[Styles.subTitle]}>
-            <Typography sourceSansPro textCenter size={22}>
+            <Typography sourceSansPro textCenter size={22} color='#FFFFFF'>
               Don't own a gaming PC? Vectordash lets you play games like Call of
               Duty, GTA V, Magic
             </Typography>
 
             <Block flex justifyCenter alignCenter style={{ marginTop: '5px' }}>
-              <Typography sourceSansPro textCenter size={22}>
+              <Typography sourceSansPro textCenter size={22} color='#FFFFFF'>
                 Arena, and more on
               </Typography>
 
@@ -160,7 +160,7 @@ const Homepage = () => {
                 textCenter
                 size={20}
                 bold
-                color='#8a3eff'
+                color='#ff5733'
                 style={{ marginLeft: '5px' }}>
                 Android, Mac, and Windows.
               </Typography>
@@ -189,21 +189,26 @@ const Homepage = () => {
       <Block className={[Styles.sectionEnjoy]}>
         <Container>
           <Block flex alignCenter justifyCenter>
-            <Typography h1 color='#000000'>
+            <Typography h1 color='#FFFFFF'>
               ENJOY
             </Typography>
 
-            <Typography h1 color='#804bff' style={{ marginLeft: '10px' }}>
+            <Typography h1 color='#ff5733' style={{ marginLeft: '10px' }}>
               OUR BEST FEATURES
             </Typography>
           </Block>
 
-          <Typography h1 color='#000000'>
+          <Typography h1 color='#FFFFFF'>
             WHEN PLAYING THE GAME
           </Typography>
 
           <Container width={45} style={{ marginTop: '15px' }}>
-            <Typography sourceSansPro textCenter size={20} height={30}>
+            <Typography
+              sourceSansPro
+              textCenter
+              size={20}
+              height={30}
+              color='#FFFFFF'>
               Curabitur lobortis id lorem id bibendum Ut id consectetur magna
               Quisque volutpat augue enim
             </Typography>
@@ -220,11 +225,11 @@ const Homepage = () => {
                     />
                   </Block>
                   <Block relative style={{ maxWidth: '45%' }}>
-                    <Typography h1 color='#000000' textLeft>
+                    <Typography h1 color='#FFFFFF' textLeft>
                       The gaming rig you
                     </Typography>
 
-                    <Typography h1 color='#000000' textLeft>
+                    <Typography h1 color='#FFFFFF' textLeft>
                       deserve
                     </Typography>
 
@@ -284,7 +289,11 @@ const Homepage = () => {
                       on gaming.
                     </Typography>
 
-                    <Button outline small style={{ marginTop: '50px' }}>
+                    <Button
+                      outline
+                      small
+                      style={{ marginTop: '50px' }}
+                      transparent>
                       Pre-Order Now
                     </Button>
                   </Block>
@@ -299,25 +308,25 @@ const Homepage = () => {
         <Container>
           <Block flex>
             <Block>
-              <Typography h1 color='#000000' textLeft>
+              <Typography h1 color='#FFFFFF' textLeft>
                 PLAY THE LATEST GAMES
               </Typography>
 
               <Block flex>
-                <Typography h1 color='#000000' textLeft>
+                <Typography h1 color='#FFFFFF' textLeft>
                   AT 60 FPS
                 </Typography>
 
                 <Typography
                   h1
-                  color='#804bff'
+                  color='#ff5733'
                   style={{ marginLeft: '10px' }}
                   textLeft>
                   WITHOUT A
                 </Typography>
               </Block>
 
-              <Typography h1 color='#804bff' textLeft>
+              <Typography h1 color='#ff5733' textLeft>
                 GRAPHICS CARD
               </Typography>
             </Block>
@@ -382,6 +391,94 @@ const Homepage = () => {
               </TabContent>
             ))}
           </Tabs>
+
+          <Block flex justifyCenter w-100>
+            <Button small>More Games</Button>
+          </Block>
+        </Container>
+      </Block>
+
+      <Block className={[Styles.sectionGetStarted]}>
+        <Block flex justifyCenter>
+          <Block flex>
+            <Typography h1 color='#FFFFFF' textLeft>
+              VECTORDASH
+            </Typography>
+
+            <Typography
+              h1
+              color='#ff5733'
+              style={{ marginLeft: '10px' }}
+              textLeft>
+              IS NOW
+            </Typography>
+          </Block>
+        </Block>
+
+        <Block flex justifyCenter>
+          <Typography
+            h1
+            color='#ff5733'
+            style={{ marginLeft: '10px' }}
+            textLeft>
+            AVAILABLE NATIONWIDE
+          </Typography>
+        </Block>
+
+        <Container width={45} style={{ marginTop: '8px' }}>
+          <Typography
+            sourceSansPro
+            textCenter
+            size={20}
+            height={30}
+            color='#FFFFFF'>
+            Join 10,000 + Gamers who trust with vectordash
+          </Typography>
+        </Container>
+
+        <Block flex justifyCenter w-100 style={{ marginTop: '50px' }}>
+          <Button small>Get Started</Button>
+        </Block>
+      </Block>
+
+      <Block relative className={[Styles.sectionMap]}>
+        <img
+          className={Styles.maps}
+          alt='Map Wide'
+          src='/static/img/maps.svg'
+        />
+
+        <Block absolute className={[Styles.moscow]}>
+          <img alt='Tooltips' src='/static/img/tooltips-group.svg' />
+          <Block relative w100 style={{ height: '100%' }}>
+            <Block absolute style={{ top: '-210px', left: '111px' }}>
+              <Typography bold textCenter>
+                Moscow, Russia
+              </Typography>
+              <Typography size={14} style={{ marginTop: '3px' }} textCenter>
+                400 Members
+              </Typography>
+            </Block>
+          </Block>
+        </Block>
+      </Block>
+
+      <Block className={[Styles.sectionSocialProof]}>
+        <Block flex justifyCenter w100>
+          <Typography h1 color='#FFFFFF' textLeft>
+            THE SOCIAL PROOF
+          </Typography>
+        </Block>
+
+        <Container width={45} style={{ marginTop: '8px' }}>
+          <Typography
+            sourceSansPro
+            textCenter
+            size={20}
+            height={30}
+            color='#FFFFFF'>
+            Join 10,000 + Gamers who trust with vectordash
+          </Typography>
         </Container>
       </Block>
 
@@ -391,6 +488,60 @@ const Homepage = () => {
           src='/static/img/laptop.png'
           className={Styles.laptopImage}
         />
+
+        <img
+          alt='Pattern'
+          className={Styles.patternBottom}
+          src='/static/img/pattern.png'
+        />
+
+        <Block absolute className={[Styles.rightUnlimitedContent]}>
+          <Typography h1 color='#FFFFFF' textLeft>
+            UNLIMITED PC
+          </Typography>
+
+          <Typography h1 color='#FFFFFF' textLeft>
+            GAMING IN 4K. JUST
+          </Typography>
+
+          <Typography h1 color='#FFFFFF' textLeft>
+            $19.95 A MONTH.
+          </Typography>
+
+          <Block style={{ marginTop: '20px', marginBottom: '50px' }}>
+            <Typography
+              sourceSansPro
+              textCenter
+              size={20}
+              height={30}
+              color='#FFFFFF'
+              textLeft>
+              Try Vectordash free for 24 hours, and if you
+            </Typography>
+
+            <Typography
+              sourceSansPro
+              textCenter
+              size={20}
+              height={30}
+              color='#FFFFFF'
+              textLeft>
+              decide it isn't for you - no problem. There's
+            </Typography>
+
+            <Typography
+              sourceSansPro
+              textCenter
+              size={20}
+              height={30}
+              color='#FFFFFF'
+              textLeft>
+              no commitment. Cancel online anytime.
+            </Typography>
+          </Block>
+
+          <Button small>Get Started</Button>
+        </Block>
       </Block>
     </DefaultLayout>
   );

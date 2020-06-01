@@ -17,7 +17,7 @@ const Footer = (props) => {
           </Block>
 
           <Block className={[Styles.listItem]}>
-            <Typography bold color='#000000' size={15}>
+            <Typography bold color='#FFFFFF' size={15}>
               Vectordash
             </Typography>
 
@@ -34,7 +34,7 @@ const Footer = (props) => {
             </Typography>
           </Block>
           <Block className={[Styles.listItem]}>
-            <Typography bold color='#000000' size={15}>
+            <Typography bold color='#FFFFFF' size={15}>
               Hosting
             </Typography>
 
@@ -51,7 +51,7 @@ const Footer = (props) => {
             </Typography>
           </Block>
           <Block className={[Styles.listItem]}>
-            <Typography bold color='#000000' size={15}>
+            <Typography bold color='#FFFFFF' size={15}>
               FAQ
             </Typography>
 

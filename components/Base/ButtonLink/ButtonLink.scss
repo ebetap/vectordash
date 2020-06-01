@@ -10,4 +10,10 @@
   border: 0;
   background: transparent;
   cursor: pointer;
+  transition: all 0.3s;
+  color: #ffffff;
+
+  &:hover {
+    color: #ff5733;
+  }
 }

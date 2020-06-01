@@ -64,7 +64,7 @@ export const Tabs = (props) => {
               setActiveTab(child.props.label);
             }}>
             <Typography
-              color={activeTab === child.props.label ? '#ffffff' : color}
+              color={'#ffffff'}
               className={[
                 Styles.tabHeadLabel,
                 ...tabsHeadLabelActiveClass,

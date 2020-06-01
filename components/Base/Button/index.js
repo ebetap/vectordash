@@ -8,6 +8,7 @@ const Button = (props) => {
     large,
     className,
     children,
+    transparent,
     style,
     ...buttonProps
   } = props;
@@ -18,6 +19,7 @@ const Button = (props) => {
     medium && Styles.buttonMedium,
     large && Styles.buttonLarge,
     outline && Styles.outline,
+    transparent && Styles.transparent,
     ...className,
   ]
     .join(' ')
@@ -36,6 +38,7 @@ Button.defaultProps = {
   className: [],
   style: {},
   outline: false,
+  transparent: false,
 };
 
 export default Button;

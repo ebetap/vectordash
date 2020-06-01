@@ -42,7 +42,7 @@ const Typography = (props) => {
     <div
       className={classNames}
       style={{
-        color: color ? color : '#50628b',
+        color: color ? color : '#FFFFFF',
         fontSize: size && size,
         lineHeight: height && `${height}px`,
         ...style,

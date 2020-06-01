@@ -1,7 +1,7 @@
 .sectionHeader {
   padding-top: 140px;
   min-height: 100vh;
-  background-image: linear-gradient(to top, #fbfdff, #e7f1ff);
+  background-image: linear-gradient(to top, #111116, #07070b);
 }
 
 .subTitle {
@@ -37,6 +37,7 @@
 
 .sectionEnjoy {
   padding-top: 280px;
+  background: #07070b;
 }
 
 .tabsMenu {
@@ -50,11 +51,19 @@
 }
 
 .sectionPrelist {
-  margin-top: 110px;
+  padding-top: 110px;
+  background: #07070b;
 }
 
 .sectionGameList {
-  margin-top: 65px;
+  padding-top: 65px;
+  background: #07070b;
+}
+
+.sectionGetStarted {
+  padding-top: 75px;
+  background: #07070b;
+  padding-bottom: 100px;
 }
 
 .customWrapperTab {
@@ -85,15 +94,49 @@
 }
 
 .sectionUnlimited {
-  margin-top: 60px;
-  background-image: linear-gradient(to bottom, #ffffff, #e7f1ff);
+  padding-top: 60px;
+  background: #1c1d20;
   height: 750px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .laptopImage {
   position: absolute;
-  left: 30px;
-  bottom: -140px;
-  max-width: 900px;
+  left: 50px;
+  bottom: -100px;
+  max-width: 55vw;
+  z-index: 2;
+}
+
+.sectionMap {
+  background: #07070b;
+  padding-bottom: 100px;
+  min-height: 670px;
+}
+
+.maps {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.moscow {
+  left: 36.6vw;
+  top: 29.5%;
+}
+
+.sectionSocialProof {
+  background: #07070b;
+  padding-bottom: 100px;
+}
+
+.patternBottom {
+  position: absolute;
+
+  z-index: 0;
+}
+
+.rightUnlimitedContent {
+  right: 9vw;
+  top: 12vh;
 }

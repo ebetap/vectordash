@@ -2,8 +2,7 @@
   min-width: max-content;
   height: 54px;
   border-radius: 32px;
-
-  background-image: linear-gradient(66deg, #804bff -65%, #804bff 116%);
+  background: #ff5733;
   color: #ffffff;
   cursor: pointer;
   font-family: Montserrat;
@@ -28,7 +27,7 @@
   transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease;
 
   &:active {
-    background-image: linear-gradient(66deg, #804bff -65%, #391196 116%);
+    background: #c33d20;
   }
 
   &:hover {
@@ -41,14 +40,18 @@
 }
 
 .outline {
-  border: 1px solid #804bff;
-  background: #ffffff;
-  color: #804bff;
+  border: 1px solid #e1e1e1;
+  color: #ffffff;
   box-shadow: unset;
+}
+
+.transparent {
+  background: transparent;
 }
 
 .small {
   font-size: 16px !important;
   font-weight: 500;
   padding: 0 30px;
+  height: 49px;
 }
