@@ -1,0 +1,13 @@
+.rating {
+  align-items: center;
+  margin-top: 2px;
+  .rating-number {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  img {
+    margin-right: 4px;
+    max-width: 15px;
+  }
+}

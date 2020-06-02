@@ -3,7 +3,7 @@ module.exports = withSass({
   cssModules: true,
   cssLoaderOptions: {
     importLoaders: 1,
-    localIdentName: '[local]___[hash:base64:5]'
+    localIdentName: '[local]___[hash:base64:5]',
   },
   webpack(config) {
     config.module.rules.push({
@@ -15,12 +15,12 @@ module.exports = withSass({
           options: {
             limit: 100000,
             outputPath: 'static/',
-            publicPath: '/_next/'
-          }
-        }
-      ]
+            publicPath: '/_next/',
+          },
+        },
+      ],
     });
 
     return config;
-  }
+  },
 });

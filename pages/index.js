@@ -7,6 +7,7 @@ import Container from '../components/Base/Container';
 
 import Styles from './index.scss';
 import GameCard from '../components/GameCard';
+import Stars from '../components/Stars';
 
 const Homepage = () => {
   const [tabs] = useState([
@@ -126,6 +127,29 @@ const Homepage = () => {
           background: '#ffb820',
         },
       ],
+    },
+  ]);
+
+  const [testimoni] = useState([
+    {
+      name: 'Christian Elliott',
+      image: '/static/img/avatar1.png',
+    },
+    {
+      name: 'Julie Obrien',
+      image: '/static/img/avatar2.png',
+    },
+    {
+      name: 'Barbara Martinez',
+      image: '/static/img/avatar3.png',
+    },
+    {
+      name: 'Nicole Ross',
+      image: '/static/img/avatar4.png',
+    },
+    {
+      name: 'Beta Smith',
+      image: '/static/img/avatar5.png',
     },
   ]);
 
@@ -470,7 +494,7 @@ const Homepage = () => {
           </Typography>
         </Block>
 
-        <Container width={45} style={{ marginTop: '8px' }}>
+        <Container width={45} style={{ marginTop: '13px' }}>
           <Typography
             sourceSansPro
             textCenter
@@ -480,6 +504,74 @@ const Homepage = () => {
             Join 10,000 + Gamers who trust with vectordash
           </Typography>
         </Container>
+
+        <Block flex w100 className={[Styles.testiRow]}>
+          {testimoni.map((item) => (
+            <Block relative className={[Styles.testiItem]}>
+              <img
+                src='/static/img/petik.png'
+                alt='Icon Petik'
+                className={Styles.iconPetik}
+              />
+
+              <Typography sourceSansPro color='#000000'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut
+                pretium pretium tempor Ut eget imperdiet neque. In volutpat ante
+                semper diam molestiei
+              </Typography>
+
+              <Block flex alignCenter style={{ marginTop: '15px' }}>
+                <img
+                  alt='Avatar'
+                  className={Styles.avatarIconTesti}
+                  src={item.image}
+                />
+
+                <Block style={{ marginLeft: '8px' }}>
+                  <Typography bold color='#000000'>
+                    {item.name}
+                  </Typography>
+
+                  <Stars count={4} renderRest />
+                </Block>
+              </Block>
+            </Block>
+          ))}
+        </Block>
+
+        <Block flex w100 className={[Styles.testiRow]}>
+          {testimoni.map((item) => (
+            <Block relative className={[Styles.testiItem]}>
+              <img
+                src='/static/img/petik.png'
+                alt='Icon Petik'
+                className={Styles.iconPetik}
+              />
+
+              <Typography sourceSansPro color='#000000'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut
+                pretium pretium tempor Ut eget imperdiet neque. In volutpat ante
+                semper diam molestiei
+              </Typography>
+
+              <Block flex alignCenter style={{ marginTop: '15px' }}>
+                <img
+                  alt='Avatar'
+                  className={Styles.avatarIconTesti}
+                  src={item.image}
+                />
+
+                <Block style={{ marginLeft: '8px' }}>
+                  <Typography bold color='#000000'>
+                    {item.name}
+                  </Typography>
+
+                  <Stars count={4} renderRest />
+                </Block>
+              </Block>
+            </Block>
+          ))}
+        </Block>
       </Block>
 
       <Block relative className={[Styles.sectionUnlimited]}>
