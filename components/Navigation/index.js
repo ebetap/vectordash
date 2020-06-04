@@ -31,7 +31,7 @@ const Navigation = (props) => {
             <img className={Styles.logo} src='/static/img/logo.png' />
           </Block>
 
-          <Block flex alignCenter>
+          <Block flex alignCenter className={[Styles.wrapperMenus]}>
             <Block className={[Styles.wrapperMenuItem]}>
               <ButtonLink>Home</ButtonLink>
             </Block>

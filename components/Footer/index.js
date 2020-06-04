@@ -7,7 +7,7 @@ const Footer = (props) => {
   return (
     <Block className={[Styles.footer]}>
       <Container>
-        <Block w100 flex justifyBetween>
+        <Block w100 flex wrap justifyBetween>
           <Block className={[Styles.listItem]}>
             <img
               alt='Logo'

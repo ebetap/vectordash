@@ -8,6 +8,7 @@ import Container from '../components/Base/Container';
 import Styles from './index.scss';
 import GameCard from '../components/GameCard';
 import Stars from '../components/Stars';
+import { useWindowSize } from '../utils/Helpers';
 
 const Homepage = () => {
   const [tabs] = useState([
@@ -25,6 +26,7 @@ const Homepage = () => {
     'RPG',
   ]);
   const [activeTab, setActiveTab] = useState('');
+  const size = useWindowSize();
   const [listGames, setListGames] = useState([
     {
       name: 'APEX Legends',
@@ -174,8 +176,19 @@ const Homepage = () => {
               Duty, GTA V, Magic
             </Typography>
 
-            <Block flex justifyCenter alignCenter style={{ marginTop: '5px' }}>
-              <Typography sourceSansPro textCenter size={22} color='#FFFFFF'>
+            <Block
+              flex
+              wrap
+              justifyCenter
+              alignCenter
+              className={[Styles.wrapperSubtitle]}
+              style={{ marginTop: '5px' }}>
+              <Typography
+                sourceSansPro
+                textCenter
+                size={22}
+                color='#FFFFFF'
+                className={[Styles.subTitle1]}>
                 Arena, and more on
               </Typography>
 
@@ -200,8 +213,8 @@ const Homepage = () => {
           <Block className={[Styles.inner]}>
             <iframe
               className={Styles.gameVideo}
-              width='760'
-              height='480'
+              width={size.width <= 767 ? size.width - 50 : '760'}
+              height={size.width <= 767 ? '270' : '480'}
               src='https://www.youtube-nocookie.com/embed/c0i88t0Kacs'
               frameborder='0'
               allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
@@ -211,8 +224,8 @@ const Homepage = () => {
       </Block>
 
       <Block className={[Styles.sectionEnjoy]}>
-        <Container>
-          <Block flex alignCenter justifyCenter>
+        <Container width={size.width <= 767 ? 100 : 85}>
+          <Block flex wrap alignCenter justifyCenter>
             <Typography h1 color='#FFFFFF'>
               ENJOY
             </Typography>
@@ -226,7 +239,9 @@ const Homepage = () => {
             WHEN PLAYING THE GAME
           </Typography>
 
-          <Container width={45} style={{ marginTop: '15px' }}>
+          <Container
+            width={size.width <= 767 ? 90 : 45}
+            style={{ marginTop: '15px' }}>
             <Typography
               sourceSansPro
               textCenter
@@ -489,12 +504,17 @@ const Homepage = () => {
 
       <Block className={[Styles.sectionSocialProof]}>
         <Block flex justifyCenter w100>
-          <Typography h1 color='#FFFFFF' textLeft>
+          <Typography
+            h1
+            color='#FFFFFF'
+            textLeft={size.width <= 767 ? false : true}>
             THE SOCIAL PROOF
           </Typography>
         </Block>
 
-        <Container width={45} style={{ marginTop: '13px' }}>
+        <Container
+          width={size.width <= 767 ? 95 : 45}
+          style={{ marginTop: '13px' }}>
           <Typography
             sourceSansPro
             textCenter

@@ -2,18 +2,28 @@
   padding-top: 220px;
   padding-bottom: 80px;
   background: #07070b;
+
+  @media (max-width: 767px) {
+    padding-bottom: 20px;
+    padding-top: 140px;
+  }
 }
 
 .listItem {
   max-width: 24%;
   flex: 0 0 24%;
 
-  &:first-child {
-    max-width: 32%;
-    flex: 0 0 32%;
+  @media (max-width: 767px) {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 45px;
   }
 }
 
 .logoBottom {
   max-width: 220px;
+
+  @media (max-width: 767px) {
+    max-width: 170px;
+  }
 }

@@ -6,11 +6,21 @@
   padding-bottom: 27px;
 }
 
+.wrapperMenus {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
 .logo {
   max-width: 220px;
   cursor: pointer;
   transition: all 0.3s;
   opacity: 1;
+
+  @media (max-width: 767px) {
+    max-width: 170px;
+  }
 }
 
 .wrapperMenuItem {
