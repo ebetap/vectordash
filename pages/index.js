@@ -259,11 +259,16 @@ const Homepage = () => {
                 <TabContent label={tab}>
                   <Block relative>
                     <img
-                      src='/static/img/mockup.png'
+                      src={`/static/img/${
+                        size.width <= 767 ? 'mockup-mobile' : 'mockup'
+                      }.png`}
                       className={Styles.mockup}
                     />
                   </Block>
-                  <Block relative style={{ maxWidth: '45%' }}>
+                  <Block
+                    relative
+                    className={[Styles.gamingRig]}
+                    style={{ maxWidth: '45%' }}>
                     <Typography h1 color='#FFFFFF' textLeft>
                       The gaming rig you
                     </Typography>
@@ -459,12 +464,14 @@ const Homepage = () => {
             h1
             color='#ff5733'
             style={{ marginLeft: '10px' }}
-            textLeft>
+            textLeft={size.width <= 767 ? false : true}>
             AVAILABLE NATIONWIDE
           </Typography>
         </Block>
 
-        <Container width={45} style={{ marginTop: '8px' }}>
+        <Container
+          width={size.width <= 767 ? 95 : 45}
+          style={{ marginTop: '8px' }}>
           <Typography
             sourceSansPro
             textCenter

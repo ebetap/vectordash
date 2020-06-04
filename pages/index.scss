@@ -71,8 +71,9 @@
 
   @media (max-width: 767px) {
     position: relative;
-    right: unset;
+    right: -10px;
     top: unset;
+    width: 100%;
   }
 }
 
@@ -276,5 +277,11 @@
 .wrapperSubtitle {
   @media (max-width: 767px) {
     margin-top: 0 !important;
+  }
+}
+
+.gamingRig {
+  @media (max-width: 767px) {
+    max-width: 100% !important;
   }
 }
