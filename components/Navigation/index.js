@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Styles from './Navigation.scss';
 
 import Block from '../Base/Block';
@@ -7,6 +8,9 @@ import ButtonLink from '../Base/ButtonLink';
 import { Button } from '../Base';
 
 const Navigation = (props) => {
+  const { navTransparent } = props;
+  const router = useRouter();
+
   const [scrollPosition, setSrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -28,7 +32,11 @@ const Navigation = (props) => {
       <Container>
         <Block flex justifyBetween alignCenter>
           <Block>
-            <img className={Styles.logo} src='/static/img/logo.png' />
+            <img
+              className={Styles.logo}
+              src='/static/img/logo.png'
+              onClick={() => router.push('/')}
+            />
           </Block>
 
           <Block flex alignCenter className={[Styles.wrapperMenus]}>
@@ -53,13 +61,17 @@ const Navigation = (props) => {
             </Block>
 
             <Block className={[Styles.wrapperMenuItem]}>
-              <Button>Sign Up</Button>
+              <Button isWhite={navTransparent ? true : false}>Sign Up</Button>
             </Block>
           </Block>
         </Block>
       </Container>
     </Block>
   );
+};
+
+Navigation.defaultProps = {
+  navTransparent: false,
 };
 
 export default Navigation;

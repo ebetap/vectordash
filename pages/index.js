@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import DefaultLayout from '../layouts/Default';
 
 import { Block, Typography, Button } from '../components/Base';
@@ -9,8 +10,10 @@ import Styles from './index.scss';
 import GameCard from '../components/GameCard';
 import Stars from '../components/Stars';
 import { useWindowSize } from '../utils/Helpers';
+import { dummyGames } from '../constants/dummy';
 
 const Homepage = () => {
+  const router = useRouter();
   const [tabs] = useState([
     'Play the games you want',
     'The most advanced cloud gaming solution',
@@ -27,110 +30,7 @@ const Homepage = () => {
   ]);
   const [activeTab, setActiveTab] = useState('');
   const size = useWindowSize();
-  const [listGames, setListGames] = useState([
-    {
-      name: 'APEX Legends',
-      image: '/static/img/apex.png',
-      labels: [
-        {
-          label: 'RPG',
-          background: '#ffb820',
-        },
-      ],
-    },
-    {
-      name: 'Magic The Gathering Arena',
-      image: '/static/img/magic.png',
-      labels: [
-        {
-          label: 'Fighting',
-          background: '#00c6fa',
-        },
-        {
-          label: 'Action',
-          background: '#ff2f54',
-        },
-      ],
-    },
-    {
-      name: 'Rainbowsix',
-      image: '/static/img/siege.png',
-      labels: [
-        {
-          label: 'Action',
-          background: '#804bff',
-        },
-      ],
-    },
-    {
-      name: 'League of Legends',
-      image: '/static/img/league.png',
-      labels: [
-        {
-          label: 'Arcade',
-          background: '#ffb820',
-        },
-      ],
-    },
-    {
-      name: 'Overwatch',
-      image: '/static/img/overwatch.png',
-      labels: [
-        {
-          label: 'Fighting',
-          background: '#00c6fa',
-        },
-        {
-          label: 'Action',
-          background: '#ff2f54',
-        },
-      ],
-    },
-    {
-      name: 'PUBG',
-      image: '/static/img/pubg.png',
-      labels: [
-        {
-          label: 'Action',
-          background: '#ff2f54',
-        },
-      ],
-    },
-    {
-      name: 'Dota 2',
-      image: '/static/img/dota2.png',
-      labels: [
-        {
-          label: 'RPG',
-          background: '#ffb820',
-        },
-      ],
-    },
-    {
-      name: 'Magic The Gathering Arena',
-      image: '/static/img/magic.png',
-      labels: [
-        {
-          label: 'Fighting',
-          background: '#00c6fa',
-        },
-        {
-          label: 'Action',
-          background: '#ff2f54',
-        },
-      ],
-    },
-    {
-      name: 'APEX Legends',
-      image: '/static/img/apex.png',
-      labels: [
-        {
-          label: 'RPG',
-          background: '#ffb820',
-        },
-      ],
-    },
-  ]);
+  const [listGames, setListGames] = useState(dummyGames);
 
   const [testimoni] = useState([
     {
@@ -427,7 +327,14 @@ const Homepage = () => {
               <TabContent label={tabB}>
                 <Block w100 flex wrap justifyBetween>
                   {listGames.map((data) => (
-                    <Block relative className={[Styles.cardWrapperSizing]}>
+                    <Block
+                      relative
+                      className={[Styles.cardWrapperSizing]}
+                      onClick={() =>
+                        router
+                          .push('/game-description')
+                          .then(() => window.scrollTo(0, 0))
+                      }>
                       <GameCard data={data} />
                     </Block>
                   ))}

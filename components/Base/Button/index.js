@@ -10,6 +10,9 @@ const Button = (props) => {
     children,
     transparent,
     style,
+    isWhite,
+    leftIcon,
+    hoverEffect,
     ...buttonProps
   } = props;
 
@@ -20,6 +23,9 @@ const Button = (props) => {
     large && Styles.buttonLarge,
     outline && Styles.outline,
     transparent && Styles.transparent,
+    isWhite && Styles.isWhite,
+    leftIcon && Styles.paddingLeftIcon,
+    !hoverEffect && Styles.noHoverEffect,
     ...className,
   ]
     .join(' ')
@@ -29,6 +35,9 @@ const Button = (props) => {
 
   return (
     <button className={classNames} style={{ ...style }} {...buttonProps}>
+      {leftIcon && (
+        <img alt='Left Icon' className={[Styles.leftIcon]} src={leftIcon} />
+      )}
       {children}
     </button>
   );
@@ -39,6 +48,9 @@ Button.defaultProps = {
   style: {},
   outline: false,
   transparent: false,
+  isWhite: false,
+  leftIcon: false,
+  hoverEffect: true,
 };
 
 export default Button;

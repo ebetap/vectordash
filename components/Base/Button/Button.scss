@@ -1,6 +1,7 @@
 .buttonBase {
   min-width: max-content;
   height: 54px;
+  position: relative;
   border-radius: 32px;
   background: #ff5733;
   color: #ffffff;
@@ -39,6 +40,13 @@
   }
 }
 
+.noHoverEffect {
+  &:hover {
+    transform: unset;
+    box-shadow: unset;
+  }
+}
+
 .outline {
   border: 1px solid #e1e1e1;
   color: #ffffff;
@@ -54,4 +62,25 @@
   font-weight: 500;
   padding: 0 30px;
   height: 49px;
+}
+
+.isWhite {
+  background: #ffffff;
+  color: #000000;
+
+  &:active {
+    color: #ffffff;
+  }
+}
+
+.leftIcon {
+  position: absolute;
+  left: 11px;
+  width: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.paddingLeftIcon {
+  padding-left: 45px;
 }

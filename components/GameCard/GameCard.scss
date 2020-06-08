@@ -10,6 +10,8 @@
   -ms-transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1),
     box-shadow 0.2s ease;
   transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
@@ -37,7 +39,7 @@
 }
 
 .labelItem {
-  margin-right: 7px;
+  margin-right: 10px;
 }
 
 .cardContent {

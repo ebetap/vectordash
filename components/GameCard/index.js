@@ -2,7 +2,7 @@ import Styles from './GameCard.scss';
 import { Block, Typography, Label } from '../Base';
 
 const GameCard = (props) => {
-  const { data } = props;
+  const { data, customCardContent } = props;
 
   const { name, image, labels } = data;
 
@@ -10,7 +10,7 @@ const GameCard = (props) => {
     <Block relative className={[Styles.gameCardWrapper]}>
       <img alt='Game Cover' src={image} />
 
-      <Block className={[Styles.cardContent]}>
+      <Block className={[Styles.cardContent, ...customCardContent]}>
         <Block flex wrap alignCenter>
           {labels.map((item) => (
             <Block className={[Styles.labelItem]}>
@@ -38,6 +38,7 @@ const GameCard = (props) => {
 
 GameCard.defaultProps = {
   data: {},
+  customCardContent: [],
 };
 
 export default GameCard;
