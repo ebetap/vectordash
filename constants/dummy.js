@@ -102,3 +102,23 @@ export const dummyGames = [
     ],
   },
 ];
+
+export const customerReview = [
+  {
+    name: 'Adam Wagner',
+    post:
+      'Awesome game. Very entertaining puzzles and mechanics, great job people.',
+    image: '/static/img/photo-review.png',
+  },
+  {
+    name: 'Patrick Hoffman',
+    post:
+      'Really fun game with a cool art style. Good level design that feels even better with the different types of spears. Recommended.',
+    image: '/static/img/photo-review1.png',
+  },
+  {
+    name: 'Victoria Torres',
+    post: 'Cool Game !',
+    image: '/static/img/photo-review2.png',
+  },
+];
