@@ -122,3 +122,22 @@ export const customerReview = [
     image: '/static/img/photo-review2.png',
   },
 ];
+
+export const cardGamePlay = [
+  {
+    caption: 'Mutation and Skills',
+    image: '/static/img/skill1.png',
+  },
+  {
+    caption: 'Equipment',
+    image: '/static/img/skill2.png',
+  },
+  {
+    caption: 'Monster Hunts',
+    image: '/static/img/skill3.png',
+  },
+  {
+    caption: 'Allies and Enemies',
+    image: '/static/img/skill4.png',
+  },
+];

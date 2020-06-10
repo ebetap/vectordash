@@ -1,0 +1,21 @@
+.gameplayCaption {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  width: max-content;
+  transform: translateX(-50%);
+}
+
+.wrapperGameplayCard {
+  padding: 20px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.imageGameplay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
