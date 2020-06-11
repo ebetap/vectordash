@@ -16,13 +16,13 @@ const About = (props) => {
 
         <Block className={[Styles.contentHeader]}>
           <Block flex alignCenter justifyCenter>
-            <Typography style={{ fontWeight: '900' }} size={52} color='#FFFFFF'>
+            <Typography style={{ fontWeight: '900' }} size={60} color='#FFFFFF'>
               ABOUT
             </Typography>
 
             <Typography
               bold
-              size={52}
+              size={60}
               color='#ff5733'
               style={{ marginLeft: '15px', fontWeight: '900' }}>
               VECTORDASH

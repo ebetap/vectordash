@@ -198,3 +198,11 @@ export const ourTeam = [
     jobTitle: 'Digital Marketing',
   },
 ];
+
+export const popularQuestion = [
+  'Dota 2',
+  'League of Legends',
+  'APEX Legends',
+  'Fornite',
+  'PUBG',
+];

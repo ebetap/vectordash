@@ -10,6 +10,7 @@ import { Button } from '../Base';
 const Navigation = (props) => {
   const { navTransparent } = props;
   const router = useRouter();
+  const { pathname } = router;
 
   const [scrollPosition, setSrollPosition] = useState(0);
   const handleScroll = () => {
@@ -40,18 +41,31 @@ const Navigation = (props) => {
           </Block>
 
           <Block flex alignCenter className={[Styles.wrapperMenus]}>
-            <Block className={[Styles.wrapperMenuItem]}>
-              <ButtonLink>Home</ButtonLink>
+            <Block
+              className={[Styles.wrapperMenuItem]}
+              onClick={() => router.push('/')}>
+              <ButtonLink style={{ color: pathname === '/' && '#ff5733' }}>
+                Home
+              </ButtonLink>
             </Block>
 
             <Block
               className={[Styles.wrapperMenuItem]}
               onClick={() => router.push('/about')}>
-              <ButtonLink>About</ButtonLink>
+              <ButtonLink
+                style={{
+                  color: pathname === '/about' && '#ff5733',
+                }}>
+                About
+              </ButtonLink>
             </Block>
 
-            <Block className={[Styles.wrapperMenuItem]}>
-              <ButtonLink>FAQ</ButtonLink>
+            <Block
+              className={[Styles.wrapperMenuItem]}
+              onClick={() => router.push('/faq')}>
+              <ButtonLink style={{ color: pathname === '/faq' && '#ff5733' }}>
+                FAQ
+              </ButtonLink>
             </Block>
 
             <Block className={[Styles.wrapperMenuItem]}>
