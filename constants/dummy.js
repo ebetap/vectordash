@@ -141,3 +141,60 @@ export const cardGamePlay = [
     image: '/static/img/skill4.png',
   },
 ];
+
+export const cardMissions = [
+  {
+    caption: 'Mission 1',
+    image: '/static/img/mission1.png',
+  },
+  {
+    caption: 'Mission 2',
+    image: '/static/img/mission2.png',
+  },
+  {
+    caption: 'Mission 3',
+    image: '/static/img/mission3.png',
+  },
+  {
+    caption: 'Mission 4',
+    image: '/static/img/mission3.png',
+  },
+];
+
+export const ourTeam = [
+  {
+    name: 'Anthony Woods',
+    image: '/static/img/anthony.png',
+    jobTitle: 'Founder',
+  },
+
+  {
+    name: 'Timothy Clark',
+    image: '/static/img/timothy.png',
+    jobTitle: 'Co-Founder',
+  },
+
+  {
+    name: 'Mildred Greene',
+    image: '/static/img/mildred.png',
+    jobTitle: 'Digital Marketing',
+  },
+
+  {
+    name: 'Raymond Oliver',
+    image: '/static/img/raymond.png',
+    jobTitle: 'Engineer',
+  },
+
+  {
+    name: 'Jordan Patel',
+    image: '/static/img/jordan.png',
+    jobTitle: 'Engineer',
+  },
+
+  {
+    name: 'Sara Dixon',
+    image: '/static/img/zara.png',
+    jobTitle: 'Digital Marketing',
+  },
+];

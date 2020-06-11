@@ -44,7 +44,9 @@ const Navigation = (props) => {
               <ButtonLink>Home</ButtonLink>
             </Block>
 
-            <Block className={[Styles.wrapperMenuItem]}>
+            <Block
+              className={[Styles.wrapperMenuItem]}
+              onClick={() => router.push('/about')}>
               <ButtonLink>About</ButtonLink>
             </Block>
 
