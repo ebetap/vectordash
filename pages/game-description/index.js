@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Layout from '../../layouts/Default';
 import Block from '../../components/Base/Block';
@@ -26,9 +27,15 @@ const GameDescription = (props) => {
     <Layout navTransparent>
       <Block className={[Styles.gameDescription]}>
         <Block relative className={[Styles.sectionHeader]}>
-          <img
+          {/* <img
             className={[Styles.backgroundHeader]}
             src='/static/img/cover-desc.png'
+          /> */}
+
+          <LazyLoadImage
+            alt='Cover'
+            effect='blur'
+            src='/static/img/cover-desc.png' // use normal <img> attributes as props
           />
 
           <Block className={[Styles.contentHeader]}>

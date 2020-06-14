@@ -1,17 +1,25 @@
-import Styles from './Faq.scss';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import DefaultLayout from '../../layouts/Default';
 import { Block, Typography, Button, Label } from '../../components/Base';
 import Newsletter from '../../components/Newsletter';
 import Container from '../../components/Base/Container';
 import GameCard from '../../components/GameCard';
-import { popularQuestion, dummyGames } from '../../constants/dummy';
 import QNAs from '../../components/QNA';
+
+import Styles from './Faq.scss';
+import { popularQuestion, dummyGames } from '../../constants/dummy';
 
 const FAQ = (props) => {
   return (
     <DefaultLayout navTransparent>
       <Block relative className={[Styles.headerFAQ]}>
-        <img alt='Cover' src='/static/img/cover-faq.png' />
+        {/* <img alt='Cover' src='/static/img/cover-faq.png' /> */}
+        <LazyLoadImage
+          alt='Cover'
+          effect='blur'
+          src='/static/img/cover-faq.png' // use normal <img> attributes as props
+        />
 
         <Block absolute className={[Styles.contentHeader]}>
           <Typography color='#FFFFFF' bigTitle textCenter>
