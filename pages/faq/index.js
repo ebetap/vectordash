@@ -8,7 +8,11 @@ import GameCard from '../../components/GameCard';
 import QNAs from '../../components/QNA';
 
 import Styles from './Faq.scss';
-import { popularQuestion, dummyGames } from '../../constants/dummy';
+import {
+  popularQuestion,
+  dummyGames,
+  qnaQuestion,
+} from '../../constants/dummy';
 
 const FAQ = (props) => {
   return (
@@ -102,7 +106,11 @@ const FAQ = (props) => {
               </Typography>
 
               <Block className={[Styles.listQna]}>
-                <QNAs />
+                {qnaQuestion.map((question, idx) => (
+                  <Block key={idx} style={{ marginBottom: '30px' }}>
+                    <QNAs data={question} />
+                  </Block>
+                ))}
               </Block>
             </Block>
             <Block className={[Styles.sectionRight]}>

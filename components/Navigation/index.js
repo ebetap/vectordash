@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Styles from './Navigation.scss';
+import Link from 'next/link';
 
 import Block from '../Base/Block';
 import Container from '../Base/Container';
 import ButtonLink from '../Base/ButtonLink';
 import { Button } from '../Base';
 
+import Styles from './Navigation.scss';
 const Navigation = (props) => {
   const { navTransparent } = props;
   const router = useRouter();
@@ -32,41 +33,41 @@ const Navigation = (props) => {
       className={[Styles.navigation, scrollPosition > 80 && Styles.sticky]}>
       <Container>
         <Block flex justifyBetween alignCenter>
-          <Block>
+          <Link href='/'>
             <img
               className={Styles.logo}
               src='/static/img/logo.png'
               onClick={() => router.push('/')}
             />
-          </Block>
+          </Link>
 
           <Block flex alignCenter className={[Styles.wrapperMenus]}>
-            <Block
-              className={[Styles.wrapperMenuItem]}
-              onClick={() => router.push('/')}>
-              <ButtonLink style={{ color: pathname === '/' && '#ff5733' }}>
-                Home
-              </ButtonLink>
-            </Block>
+            <Link href='/'>
+              <Block className={[Styles.wrapperMenuItem]}>
+                <ButtonLink style={{ color: pathname === '/' && '#ff5733' }}>
+                  Home
+                </ButtonLink>
+              </Block>
+            </Link>
 
-            <Block
-              className={[Styles.wrapperMenuItem]}
-              onClick={() => router.push('/about')}>
-              <ButtonLink
-                style={{
-                  color: pathname === '/about' && '#ff5733',
-                }}>
-                About
-              </ButtonLink>
-            </Block>
+            <Link href='/about'>
+              <Block className={[Styles.wrapperMenuItem]}>
+                <ButtonLink
+                  style={{
+                    color: pathname === '/about' && '#ff5733',
+                  }}>
+                  About
+                </ButtonLink>
+              </Block>
+            </Link>
 
-            <Block
-              className={[Styles.wrapperMenuItem]}
-              onClick={() => router.push('/faq')}>
-              <ButtonLink style={{ color: pathname === '/faq' && '#ff5733' }}>
-                FAQ
-              </ButtonLink>
-            </Block>
+            <Link href='/faq'>
+              <Block className={[Styles.wrapperMenuItem]}>
+                <ButtonLink style={{ color: pathname === '/faq' && '#ff5733' }}>
+                  FAQ
+                </ButtonLink>
+              </Block>
+            </Link>
 
             <Block className={[Styles.wrapperMenuItem]}>
               <ButtonLink>Support</ButtonLink>

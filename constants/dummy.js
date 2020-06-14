@@ -206,3 +206,11 @@ export const popularQuestion = [
   'Fornite',
   'PUBG',
 ];
+
+export const qnaQuestion = [
+  'How do I use my mic when playing through Parsec?',
+  'Can I use my Xbox controller?',
+  'How do I get started with Parsec?',
+  'Parsec Error -6023',
+  'Error occurred: Please make sure you entered your Parsec credentials correctly.',
+];

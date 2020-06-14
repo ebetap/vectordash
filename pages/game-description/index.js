@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Layout from '../../layouts/Default';
@@ -11,15 +12,16 @@ import logoNoText from '../../static/img/logo-not-text.png';
 
 import Styles from './GameDescription.scss';
 import Newsletter from '../../components/Newsletter';
-import GameCard from '../../components/GameCard';
+
+const GameCard = dynamic(() => import('../../components/GameCard'));
+const CustomerReview = dynamic(() => import('../../components/CustomerReview'));
+const CardGamePlay = dynamic(() => import('../../components/CardGamePlay'));
+
 import {
   dummyGames,
   customerReview,
   cardGamePlay,
 } from '../../constants/dummy';
-import CustomerReview from '../../components/CustomerReview';
-import CardGamePlay from '../../components/CardGamePlay';
-
 const GameDescription = (props) => {
   const [activeTab, setActiveTab] = useState(2);
 
