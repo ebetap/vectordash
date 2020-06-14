@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import DefaultLayout from '../layouts/Default';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+import DefaultLayout from '../layouts/Default';
 import { Block, Typography, Button } from '../components/Base';
 import { TabContent, Tabs } from '../components/Base/Tabs';
 import Container from '../components/Base/Container';
@@ -158,7 +159,17 @@ const Homepage = () => {
               {tabs.map((tab) => (
                 <TabContent label={tab}>
                   <Block relative>
-                    <img
+                    {/* <img
+                      src={`/static/img/${
+                        size.width <= 767 ? 'mockup-mobile' : 'mockup'
+                      }.png`}
+                      className={Styles.mockup}
+                    /> */}
+
+                    <LazyLoadImage
+                      visibleByDefault
+                      alt='Cover'
+                      effect='blur'
                       src={`/static/img/${
                         size.width <= 767 ? 'mockup-mobile' : 'mockup'
                       }.png`}

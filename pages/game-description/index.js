@@ -33,6 +33,7 @@ const GameDescription = (props) => {
           /> */}
 
           <LazyLoadImage
+            visibleByDefault
             alt='Cover'
             effect='blur'
             src='/static/img/cover-desc.png' // use normal <img> attributes as props

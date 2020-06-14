@@ -1,5 +1,8 @@
-import Styles from './GameCard.scss';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import { Block, Typography, Label } from '../Base';
+
+import Styles from './GameCard.scss';
 
 const GameCard = (props) => {
   const { data, customCardContent } = props;
@@ -8,7 +11,14 @@ const GameCard = (props) => {
 
   return (
     <Block relative className={[Styles.gameCardWrapper]}>
-      <img alt='Game Cover' src={image} />
+      {/* <img alt='Game Cover' src={image} /> */}
+
+      <LazyLoadImage
+        visibleByDefault
+        alt='Game Cover'
+        effect='blur'
+        src={image} // use normal <img> attributes as props
+      />
 
       <Block className={[Styles.cardContent, ...customCardContent]}>
         <Block flex wrap alignCenter>

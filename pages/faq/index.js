@@ -16,6 +16,7 @@ const FAQ = (props) => {
       <Block relative className={[Styles.headerFAQ]}>
         {/* <img alt='Cover' src='/static/img/cover-faq.png' /> */}
         <LazyLoadImage
+          visibleByDefault
           alt='Cover'
           effect='blur'
           src='/static/img/cover-faq.png' // use normal <img> attributes as props
