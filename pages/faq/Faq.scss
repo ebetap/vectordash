@@ -79,15 +79,34 @@
 }
 
 .sectionLeft {
-  width: 72%;
-  flex: 0 0 72%;
+  width: 70%;
+  flex: 0 0 70%;
 }
 
 .sectionRight {
   width: 25%;
   flex: 0 0 25%;
+  padding-top: 60px;
 }
 
 .listQna {
   margin-top: 30px;
+}
+
+.count {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background: #ffe3dd;
+  color: #ff5733;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.wrapperCategories {
+  cursor: pointer;
+  margin-bottom: 13px;
 }

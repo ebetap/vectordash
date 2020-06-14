@@ -117,6 +117,192 @@ const FAQ = (props) => {
               <Typography bold size={22} style={{ marginBottom: '20px' }}>
                 Categories
               </Typography>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Action
+                </Typography>
+
+                <Block className={[Styles.count]}>4</Block>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Arcade
+                </Typography>
+
+                <Block className={[Styles.count]}>2</Block>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Fighting
+                </Typography>
+
+                <Block className={[Styles.count]}>5</Block>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Strategy
+                </Typography>
+
+                <Block className={[Styles.count]}>1</Block>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Sport
+                </Typography>
+
+                <Block className={[Styles.count]}>8</Block>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Adventure
+                </Typography>
+
+                <Block className={[Styles.count]}>2</Block>
+              </Block>
+
+              <Typography
+                bold
+                size={22}
+                style={{ marginBottom: '25px', marginTop: '30px' }}>
+                Forums
+              </Typography>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Dota 2
+                </Typography>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  PUBG
+                </Typography>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Fortnite
+                </Typography>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  League of Legends
+                </Typography>
+              </Block>
+
+              <Typography
+                bold
+                size={22}
+                style={{ marginBottom: '25px', marginTop: '30px' }}>
+                Recent Topics
+              </Typography>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Action
+                </Typography>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Arcade
+                </Typography>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Fighting
+                </Typography>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Strategy
+                </Typography>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Sport
+                </Typography>
+              </Block>
+
+              <Block
+                relative
+                flex
+                alignCenter
+                className={[Styles.wrapperCategories]}>
+                <Typography color='#e1e1e1' sourceSansPro size={19}>
+                  Adventure
+                </Typography>
+              </Block>
             </Block>
           </Block>
         </Container>
