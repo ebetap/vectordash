@@ -2,7 +2,10 @@ import Styles from './Faq.scss';
 import DefaultLayout from '../../layouts/Default';
 import { Block, Typography, Button, Label } from '../../components/Base';
 import Newsletter from '../../components/Newsletter';
-import { popularQuestion } from '../../constants/dummy';
+import Container from '../../components/Base/Container';
+import GameCard from '../../components/GameCard';
+import { popularQuestion, dummyGames } from '../../constants/dummy';
+import QNAs from '../../components/QNA';
 
 const FAQ = (props) => {
   return (
@@ -72,7 +75,55 @@ const FAQ = (props) => {
         </Block>
       </Block>
 
-      <Block className={[Styles.sectionGames]}></Block>
+      <Block className={[Styles.sectionContentFAQ]}>
+        <Container>
+          <Block flex justifyBetween>
+            <Block className={[Styles.sectionLeft]}>
+              <Typography color='#FFFFFF' size={30} bold>
+                Vectordash FAQs
+              </Typography>
+
+              <Typography
+                sourceSansPro
+                paragraph
+                style={{ marginTop: '20px', marginBottom: '10px' }}>
+                The most common questions we get asked about Vectordash & the
+                answers. Hopefully this guide helps! If not, always feel free to
+                reach out to support
+              </Typography>
+
+              <Block className={[Styles.listQna]}>
+                <QNAs />
+              </Block>
+            </Block>
+            <Block className={[Styles.sectionRight]}>
+              <Typography bold size={22} style={{ marginBottom: '20px' }}>
+                Categories
+              </Typography>
+            </Block>
+          </Block>
+        </Container>
+      </Block>
+
+      <Block className={[Styles.sectionGames]}>
+        <Container>
+          <Typography color='#FFFFFF' size={30} bold>
+            Popular Games to Play
+          </Typography>
+        </Container>
+
+        <Block flex className={[Styles.wrapperOtherGames]}>
+          {dummyGames.map((data, idx) => (
+            <Block className={[Styles.otherGamesItem]}>
+              <GameCard
+                key={idx}
+                data={data}
+                customCardContent={[Styles.customCardContent]}
+              />
+            </Block>
+          ))}
+        </Block>
+      </Block>
 
       <Block className={[Styles.sectionNewsLetter]}>
         <Newsletter />

@@ -55,7 +55,7 @@ const About = (props) => {
 
       <Block className={[Styles.sectionAbout]}>
         <Container>
-          <Typography bold color='#e1e1e1' size={28}>
+          <Typography bold color='#e1e1e1' size={30}>
             About Us
           </Typography>
 
