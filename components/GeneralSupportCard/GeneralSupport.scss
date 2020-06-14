@@ -1,0 +1,27 @@
+.wrapperGeneralSupport {
+  padding: 30px;
+  border-radius: 4px;
+  background: #1b1d20;
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #505660;
+  border-radius: 50%;
+  margin-right: 28px;
+
+  img {
+    max-width: 25px;
+  }
+}
+
+.customButton {
+  margin-top: 10px;
+  height: 43px;
+  font-size: 13px !important;
+  font-weight: 700;
+}

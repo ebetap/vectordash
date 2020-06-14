@@ -214,3 +214,37 @@ export const qnaQuestion = [
   'Parsec Error -6023',
   'Error occurred: Please make sure you entered your Parsec credentials correctly.',
 ];
+
+export const generalSupports = [
+  {
+    title: 'Getting Started',
+    subTitle:
+      'Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.',
+    icon: '/static/img/shield.png',
+  },
+
+  {
+    title: 'Account Management',
+    subTitle:
+      'Guides tailored to help you keep your personal information correct and up to date.',
+    icon: '/static/img/person.png',
+  },
+
+  {
+    title: 'Technical Assistance',
+    subTitle: `If you're experiencing technical issues, these guides can help you identify the cause and find a solution.`,
+    icon: '/static/img/settings.png',
+  },
+
+  {
+    title: 'Contact Support',
+    subTitle: 'Find out how to contact our support heroes',
+    icon: '/static/img/phone.png',
+  },
+
+  {
+    title: 'Terms and Condition',
+    subTitle: `If you're experiencing technical issues, these guides can help you identify the cause and find a solution.`,
+    icon: '/static/img/terms.png',
+  },
+];

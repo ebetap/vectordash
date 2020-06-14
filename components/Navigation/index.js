@@ -14,6 +14,9 @@ const Navigation = (props) => {
   const { pathname } = router;
 
   const [scrollPosition, setSrollPosition] = useState(0);
+  const [showSignIn, setShowSignIn] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(false);
+
   const handleScroll = () => {
     const position = window.pageYOffset;
     setSrollPosition(position);
@@ -69,16 +72,27 @@ const Navigation = (props) => {
               </Block>
             </Link>
 
+            <Link href='/support'>
+              <Block className={[Styles.wrapperMenuItem]}>
+                <ButtonLink
+                  style={{ color: pathname === '/support' && '#ff5733' }}>
+                  Support
+                </ButtonLink>
+              </Block>
+            </Link>
+
             <Block className={[Styles.wrapperMenuItem]}>
-              <ButtonLink>Support</ButtonLink>
+              <ButtonLink onClick={() => setShowSignIn(true)}>
+                Sign In
+              </ButtonLink>
             </Block>
 
             <Block className={[Styles.wrapperMenuItem]}>
-              <ButtonLink>Sign In</ButtonLink>
-            </Block>
-
-            <Block className={[Styles.wrapperMenuItem]}>
-              <Button isWhite={navTransparent ? true : false}>Sign Up</Button>
+              <Button
+                onClick={() => setShowSignUp(true)}
+                isWhite={navTransparent ? true : false}>
+                Sign Up
+              </Button>
             </Block>
           </Block>
         </Block>

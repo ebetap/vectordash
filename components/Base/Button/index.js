@@ -12,6 +12,7 @@ const Button = (props) => {
     style,
     isWhite,
     leftIcon,
+    rightIcon,
     hoverEffect,
     ...buttonProps
   } = props;
@@ -25,6 +26,7 @@ const Button = (props) => {
     transparent && Styles.transparent,
     isWhite && Styles.isWhite,
     leftIcon && Styles.paddingLeftIcon,
+    rightIcon && Styles.paddingRightIcon,
     !hoverEffect && Styles.noHoverEffect,
     ...className,
   ]
@@ -39,6 +41,10 @@ const Button = (props) => {
         <img alt='Left Icon' className={[Styles.leftIcon]} src={leftIcon} />
       )}
       {children}
+
+      {rightIcon && (
+        <img alt='Right Icon' className={[Styles.rightIcon]} src={rightIcon} />
+      )}
     </button>
   );
 };
@@ -50,6 +56,7 @@ Button.defaultProps = {
   transparent: false,
   isWhite: false,
   leftIcon: false,
+  rightIcon: false,
   hoverEffect: true,
 };
 
