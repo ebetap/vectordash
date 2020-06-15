@@ -248,3 +248,36 @@ export const generalSupports = [
     icon: '/static/img/terms.png',
   },
 ];
+
+export const recentActivity = [
+  {
+    title: 'Applications',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+    image: '/static/img/recent1.png',
+  },
+  {
+    title: 'Mice, Keyboards, and ..',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+    image: '/static/img/recent2.png',
+  },
+  {
+    title: 'Troubleshooting',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+    image: '/static/img/recent3.png',
+  },
+  {
+    title: 'Troubleshooting',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+    image: '/static/img/recent4.png',
+  },
+  {
+    title: 'Troubleshooting',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+    image: '/static/img/recent5.png',
+  },
+  {
+    title: 'Troubleshooting',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+    image: '/static/img/recent6.png',
+  },
+];

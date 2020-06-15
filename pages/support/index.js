@@ -4,7 +4,9 @@ import { Block, Typography, Button } from '../../components/Base';
 import Styles from './Support.scss';
 import Container from '../../components/Base/Container';
 import GeneralSupportCard from '../../components/GeneralSupportCard';
-import { generalSupports } from '../../constants/dummy';
+import { generalSupports, recentActivity } from '../../constants/dummy';
+import ActivityCard from '../../components/ActivityCard';
+import ContactSupport from '../../components/ContactSupport';
 
 const Support = (props) => {
   return (
@@ -65,6 +67,51 @@ const Support = (props) => {
             ))}
           </Block>
         </Container>
+      </Block>
+
+      <Block relative className={[Styles.sectionActivityCard]}>
+        <Block>
+          <Block flex justifyCenter alignCenter>
+            <Typography size={30} color='#e1e1e1' bold>
+              VIEW
+            </Typography>
+
+            <Typography
+              size={30}
+              color='#ff5733'
+              bold
+              style={{ marginLeft: '10px' }}>
+              RECENT ACTIVITY
+            </Typography>
+          </Block>
+
+          <Typography
+            sourceSansPro
+            size={18}
+            color='#e1e1e1'
+            textCenter
+            style={{ marginTop: '10px', marginBottom: '50px' }}>
+            Join 10,000 + Gamers who trust with vectordash
+          </Typography>
+        </Block>
+
+        <Container>
+          <Block wrap flex className={[Styles.wrapperActivityList]}>
+            {recentActivity.map((data, idx) => (
+              <Block key={idx} className={[Styles.activityItem]}>
+                <ActivityCard data={data} />
+              </Block>
+            ))}
+          </Block>
+
+          <Block flex justifyCenter style={{ marginTop: '30px' }}>
+            <Button small>See More</Button>
+          </Block>
+        </Container>
+      </Block>
+
+      <Block>
+        <ContactSupport />
       </Block>
     </Layout>
   );
