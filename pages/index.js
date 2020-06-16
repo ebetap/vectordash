@@ -334,8 +334,8 @@ const Homepage = () => {
             tabsHeadCustomLabelWrapperClass={[Styles.customWrapperTab]}
             tabsHeadCustomLabelClass={[Styles.customLabel]}
             tabsHeadLabelActiveClass={Styles.customLabelActive}>
-            {tabsBottom.map((tabB) => (
-              <TabContent label={tabB}>
+            {tabsBottom.map((tabB, idx) => (
+              <TabContent key={idx} label={tabB}>
                 <Block w100 flex wrap justifyBetween>
                   {listGames.map((data) => (
                     <Block
@@ -451,8 +451,8 @@ const Homepage = () => {
         </Container>
 
         <Block flex w100 className={[Styles.testiRow]}>
-          {testimoni.map((item) => (
-            <Block relative className={[Styles.testiItem]}>
+          {testimoni.map((item, idx) => (
+            <Block key={idx} relative className={[Styles.testiItem]}>
               <img
                 src='/static/img/petik.png'
                 alt='Icon Petik'
@@ -485,8 +485,8 @@ const Homepage = () => {
         </Block>
 
         <Block flex w100 className={[Styles.testiRow]}>
-          {testimoni.map((item) => (
-            <Block relative className={[Styles.testiItem]}>
+          {testimoni.map((item, idx) => (
+            <Block key={idx} relative className={[Styles.testiItem]}>
               <img
                 src='/static/img/petik.png'
                 alt='Icon Petik'

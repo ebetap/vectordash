@@ -52,8 +52,9 @@ export const Tabs = (props) => {
           marginLeft: tabsHeadAlign === 'left' ? 0 : 'auto',
           maxWidth: `${tabsHeadWidth}%`,
         }}>
-        {children.map((child) => (
+        {children.map((child, idx) => (
           <Block
+            key={idx}
             className={[
               Styles.tabHeadMenu,
               ...tabsHeadCustomLabelWrapperClass,

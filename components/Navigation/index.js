@@ -6,15 +6,17 @@ import Block from '../Base/Block';
 import Container from '../Base/Container';
 import ButtonLink from '../Base/ButtonLink';
 import { Button } from '../Base';
+import SignIn from '../Signin';
 
 import Styles from './Navigation.scss';
+
 const Navigation = (props) => {
   const { navTransparent } = props;
   const router = useRouter();
   const { pathname } = router;
 
   const [scrollPosition, setSrollPosition] = useState(0);
-  const [showSignIn, setShowSignIn] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(true);
   const [showSignUp, setShowSignUp] = useState(false);
 
   const handleScroll = () => {
@@ -34,6 +36,12 @@ const Navigation = (props) => {
     <Block
       fixed
       className={[Styles.navigation, scrollPosition > 80 && Styles.sticky]}>
+      <SignIn
+        isOpen={showSignIn}
+        onBackdropPress={() => setShowSignIn(false)}
+        onClose={() => setShowSignIn(false)}
+      />
+
       <Container>
         <Block flex justifyBetween alignCenter>
           <Link href='/'>

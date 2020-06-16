@@ -22,8 +22,8 @@ const GameCard = (props) => {
 
       <Block className={[Styles.cardContent, ...customCardContent]}>
         <Block flex wrap alignCenter>
-          {labels.map((item) => (
-            <Block className={[Styles.labelItem]}>
+          {labels.map((item, idx) => (
+            <Block key={idx} className={[Styles.labelItem]}>
               <Label textLabel={item.label} background={item.background} />
             </Block>
           ))}
