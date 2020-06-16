@@ -18,7 +18,7 @@ const Navigation = (props) => {
 
   const [scrollPosition, setSrollPosition] = useState(0);
   const [showSignIn, setShowSignIn] = useState(false);
-  const [showSignUp, setShowSignUp] = useState(true);
+  const [showSignUp, setShowSignUp] = useState(false);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
