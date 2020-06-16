@@ -1,10 +1,15 @@
-import Styles from './Signin.scss';
+import { useState } from 'react';
+
 import { Block, Typography, Button } from '../Base';
-import { Container } from 'next/app';
 import Checkbox from '../Checkbox';
+import { Container } from 'next/app';
+
+import Styles from './Signin.scss';
 
 const SignIn = (props) => {
   const { isOpen, onClose, onBackdropPress } = props;
+
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     isOpen && (
@@ -94,18 +99,30 @@ const SignIn = (props) => {
 
                   <Block w100 relative>
                     <input
-                      type='password'
+                      type={showPassword ? 'text' : 'password'}
                       className={[Styles.inputText]}
                       placeholder='Enter Password'
                     />
 
-                    <Typography
-                      sourceSansPro
-                      color='#ff5733'
-                      className={[Styles.showPassword]}
-                      bold>
-                      Show
-                    </Typography>
+                    {showPassword ? (
+                      <Typography
+                        onClick={() => setShowPassword(!showPassword)}
+                        sourceSansPro
+                        color='#ff5733'
+                        className={[Styles.showPassword]}
+                        bold>
+                        Hide
+                      </Typography>
+                    ) : (
+                      <Typography
+                        onClick={() => setShowPassword(!showPassword)}
+                        sourceSansPro
+                        color='#ff5733'
+                        className={[Styles.showPassword]}
+                        bold>
+                        Show
+                      </Typography>
+                    )}
                   </Block>
                 </Block>
 
@@ -113,7 +130,9 @@ const SignIn = (props) => {
                   <Checkbox />
                 </Block>
 
-                <Button small>Sign In</Button>
+                <Button small className={[Styles.customButton]}>
+                  Sign In
+                </Button>
               </Container>
             </Block>
           </Block>

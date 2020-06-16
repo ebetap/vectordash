@@ -7,6 +7,7 @@
   background: #000;
   opacity: 0.5;
   z-index: 9999;
+  overflow-y: scroll;
 }
 
 .contentSignin {
@@ -15,12 +16,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('/static/img/panel-signin.png');
-  width: 500px;
+  background-image: url('/static/img/back-signup.png');
+  width: max-content;
   min-height: 600px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 40px;
+  padding-top: 40px;
+  overflow-y: scroll;
 }
 
 .iconClose {
@@ -40,7 +43,7 @@
 }
 
 .formSignin {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .important {
@@ -67,7 +70,7 @@
 }
 
 .formField {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .forgotPassoword {
@@ -94,4 +97,5 @@
 .customButton {
   padding: 0 35px;
   height: 44px;
+  margin-top: 25px;
 }

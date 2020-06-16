@@ -9,6 +9,7 @@ import { Button } from '../Base';
 import SignIn from '../Signin';
 
 import Styles from './Navigation.scss';
+import SignUp from '../Signup';
 
 const Navigation = (props) => {
   const { navTransparent } = props;
@@ -16,8 +17,8 @@ const Navigation = (props) => {
   const { pathname } = router;
 
   const [scrollPosition, setSrollPosition] = useState(0);
-  const [showSignIn, setShowSignIn] = useState(true);
-  const [showSignUp, setShowSignUp] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
+  const [showSignUp, setShowSignUp] = useState(true);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -40,6 +41,12 @@ const Navigation = (props) => {
         isOpen={showSignIn}
         onBackdropPress={() => setShowSignIn(false)}
         onClose={() => setShowSignIn(false)}
+      />
+
+      <SignUp
+        isOpen={showSignUp}
+        onBackdropPress={() => setShowSignUp(false)}
+        onClose={() => setShowSignUp(false)}
       />
 
       <Container>
