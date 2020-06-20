@@ -18,6 +18,7 @@ const Typography = (props) => {
     children,
     elipsis,
     paragraph,
+    extraBold,
     ...textProps
   } = props;
 
@@ -33,6 +34,7 @@ const Typography = (props) => {
     h3 && Styles.h3,
     elipsis && Styles.elipsis,
     paragraph && Styles.paragraph,
+    extraBold && Styles.extraBold,
     ...className,
   ]
     .join(' ')
@@ -69,6 +71,7 @@ Typography.defaultProps = {
   bold: false,
   elipsis: false,
   paragraph: false,
+  extraBold: false,
 };
 
 export default Typography;

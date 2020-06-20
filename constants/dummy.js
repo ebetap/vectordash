@@ -253,31 +253,64 @@ export const recentActivity = [
   {
     title: 'Applications',
     subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
-    image: '/static/img/recent1.png',
+    image:
+      'https://images.pexels.com/photos/58639/pexels-photo-58639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
   {
     title: 'Mice, Keyboards, and ..',
     subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
-    image: '/static/img/recent2.png',
+    image:
+      'https://images.pexels.com/photos/58639/pexels-photo-58639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
   {
     title: 'Troubleshooting',
     subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
-    image: '/static/img/recent3.png',
+    image:
+      'https://images.pexels.com/photos/58639/pexels-photo-58639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
   {
     title: 'Troubleshooting',
     subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
-    image: '/static/img/recent4.png',
+    image:
+      'https://images.pexels.com/photos/58639/pexels-photo-58639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
   {
     title: 'Troubleshooting',
     subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
-    image: '/static/img/recent5.png',
+    image:
+      'https://images.pexels.com/photos/58639/pexels-photo-58639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
   {
     title: 'Troubleshooting',
     subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
-    image: '/static/img/recent6.png',
+    image:
+      'https://images.pexels.com/photos/58639/pexels-photo-58639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
+];
+
+export const genericActivity = [
+  {
+    title: 'Heading',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+  },
+  {
+    title: 'Heading',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+  },
+  {
+    title: 'Heading',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+  },
+  {
+    title: 'Heading',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+  },
+  {
+    title: 'Heading',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
+  },
+  {
+    title: 'Heading',
+    subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
   },
 ];

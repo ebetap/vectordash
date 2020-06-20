@@ -7,14 +7,14 @@ const ContactSupport = () => {
     <Block className={[Styles.newsletter]}>
       <Container>
         <Block flex w100 justifyCenter alignCenter>
-          <Typography color='#FFFFFF' bold size={35}>
+          <Typography color='#FFFFFF' extraBold size={30}>
             GET IN TOUCH
           </Typography>
 
           <Typography
             color='#ff5733'
-            bold
-            size={35}
+            extraBold
+            size={30}
             style={{ marginLeft: '10px' }}>
             WITH SUPPORT
           </Typography>

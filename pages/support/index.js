@@ -72,14 +72,14 @@ const Support = (props) => {
       <Block relative className={[Styles.sectionActivityCard]}>
         <Block>
           <Block flex justifyCenter alignCenter>
-            <Typography size={30} color='#e1e1e1' bold>
+            <Typography size={30} color='#e1e1e1' extraBold>
               VIEW
             </Typography>
 
             <Typography
               size={30}
               color='#ff5733'
-              bold
+              extraBold
               style={{ marginLeft: '10px' }}>
               RECENT ACTIVITY
             </Typography>

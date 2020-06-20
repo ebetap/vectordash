@@ -1,0 +1,73 @@
+.sectionHeader {
+  min-height: 100vh;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentHeader {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 1;
+}
+
+.sectionBlogPost {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background: #07070b;
+}
+
+.listItem {
+  max-width: 23.5%;
+  flex: 0 0 23.5%;
+  margin-bottom: 20px;
+  margin-right: 2%;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.sectionArticles {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #07070b;
+}
+
+.wrapperArticles {
+  margin-bottom: 50px;
+}
+
+.sectionContent {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  background: #07070b;
+}
+
+.sectionLeft {
+  width: 70%;
+  flex: 0 0 70%;
+}
+
+.sectionRight {
+  width: 25%;
+  flex: 0 0 25%;
+  padding-top: 60px;
+}
+
+.wrapperCategories {
+  cursor: pointer;
+  margin-bottom: 13px;
+}

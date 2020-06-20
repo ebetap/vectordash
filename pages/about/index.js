@@ -145,12 +145,12 @@ const About = (props) => {
 
           <Block className={[Styles.sectionOurTeam]}>
             <Block flex justifyCenter alignCenter>
-              <Typography bold size={35} color='#e1e1e1'>
+              <Typography extraBold size={35} color='#e1e1e1'>
                 MEET
               </Typography>
 
               <Typography
-                bold
+                extraBold
                 size={35}
                 color='#ff5733'
                 style={{ marginLeft: '12px' }}>

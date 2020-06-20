@@ -7,31 +7,28 @@ const Newsletter = () => {
     <Block className={[Styles.newsletter]}>
       <Container>
         <Block flex w100 justifyCenter alignCenter>
-          <Typography color='#FFFFFF' bold size={35}>
+          <Typography color='#FFFFFF' extraBold size={30}>
             JOIN
           </Typography>
 
           <Typography
             color='#ff5733'
-            bold
-            size={35}
+            extraBold
+            size={30}
             style={{ marginLeft: '10px' }}>
             OUR NEWSLETTER
           </Typography>
         </Block>
 
-        <Block style={{ marginTop: '16px' }}>
-          <Typography color='#FFFFFF' sourceSansPro textCenter size={18}>
-            Sign up for our e-mail newsletter and stay informed
-          </Typography>
-
+        <Block style={{ marginTop: '9px' }}>
           <Typography
             color='#FFFFFF'
             sourceSansPro
             textCenter
-            style={{ marginTop: '5px' }}
-            size={18}>
-            for what’s next on the horizon.
+            size={18}
+            color='#e1e1e1'>
+            Sign up for our e-mail newsletter and stay informed for what’s next
+            on the horizon.
           </Typography>
         </Block>
 
@@ -50,6 +47,10 @@ const Newsletter = () => {
       </Container>
     </Block>
   );
+};
+
+Newsletter.defaultProps = {
+  whiteTitle: '',
 };
 
 export default Newsletter;
