@@ -8,8 +8,8 @@ const CustomerReview = (props) => {
     <Block relative className={[Styles.wrapperReview]}>
       <img src={image} className={Styles.reviewAvatar} />
 
-      <Block flex alignCenter justifyBetween>
-        <Block>
+      <Block flex wrap alignCenter justifyBetween>
+        <Block style={{ marginBottom: '15px' }}>
           <Typography bold size={16}>
             {name}
           </Typography>
@@ -46,7 +46,7 @@ const CustomerReview = (props) => {
           Was this review helpful ?
         </Typography>
 
-        <Block flex alignCenter style={{ marginTop: '12px' }}>
+        <Block flex wrap alignCenter style={{ marginTop: '12px' }}>
           <Block flex alignCenter className={[Styles.labelIcon]}>
             <img src='/static/img/like.png' />
 

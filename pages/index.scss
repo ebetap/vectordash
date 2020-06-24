@@ -30,8 +30,11 @@
 .gamePreview {
   position: absolute;
   bottom: -215px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
   @media (max-width: 767px) {
@@ -156,6 +159,7 @@
     left: 51%;
     bottom: -100px;
     max-width: 100vw;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 }
@@ -173,6 +177,7 @@
 .maps {
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
   @media (max-width: 767px) {
@@ -208,7 +213,10 @@
   @media (max-width: 767px) {
     right: unset;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
   }
 }
@@ -238,15 +246,49 @@
   border-bottom-right-radius: 5px;
   border-top-right-radius: 13px;
   border-bottom-left-radius: 13px;
-  -webkit-transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1),
-    box-shadow 0.2s ease;
-  -moz-transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1),
-    box-shadow 0.2s ease;
-  -o-transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1),
-    box-shadow 0.2s ease;
-  -ms-transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1),
-    box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease, -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
   transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease, -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
 
   &:hover {
     box-shadow: 0 48px 81px 0 rgba(145, 148, 200, 0.24);
@@ -285,4 +327,24 @@
     max-width: 85% !important;
     margin: auto;
   }
+}
+
+.sectionDescGameRig {
+  & > div {
+    line-height: 28px !important;
+  }
+
+  @media (max-width: 767px) {
+    & > div {
+      &:first-child {
+        margin-top: 15px !important;
+      }
+
+      line-height: 28px !important;
+      margin-top: 0px !important;
+    }
+  }
+}
+
+.headingPlay {
 }

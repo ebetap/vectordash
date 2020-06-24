@@ -188,61 +188,20 @@ const Homepage = () => {
                       deserve
                     </Typography>
 
-                    <Typography
-                      size={20}
-                      height={15}
-                      sourceSansPro
-                      style={{ marginTop: '25px' }}>
-                      Shadow is a full-featured cloud PC with dedicated storage
-                    </Typography>
-
-                    <Typography
-                      size={20}
-                      height={15}
-                      sourceSansPro
-                      style={{ marginTop: '15px' }}>
-                      that you can access from any device at any
-                    </Typography>
-
-                    <Typography
-                      size={20}
-                      height={15}
-                      sourceSansPro
-                      style={{ marginTop: '15px' }}>
-                      time. Bring your own games with progress and
-                    </Typography>
-
-                    <Typography
-                      size={20}
-                      height={15}
-                      sourceSansPro
-                      style={{ marginTop: '15px' }}>
-                      achievements from Steam, Epic Games Store, GOG,
-                    </Typography>
-
-                    <Typography
-                      size={20}
-                      height={15}
-                      sourceSansPro
-                      style={{ marginTop: '15px' }}>
-                      Origin, Uplay, Battle.net, etc. or install new ones. Our
-                    </Typography>
-
-                    <Typography
-                      size={20}
-                      height={15}
-                      sourceSansPro
-                      style={{ marginTop: '15px' }}>
-                      datacenters are always up to date, so you can focus
-                    </Typography>
-
-                    <Typography
-                      size={20}
-                      height={15}
-                      sourceSansPro
-                      style={{ marginTop: '15px' }}>
-                      on gaming.
-                    </Typography>
+                    <Block className={[Styles.sectionDescGameRig]}>
+                      <Typography
+                        size={20}
+                        height={15}
+                        sourceSansPro
+                        style={{ marginTop: '25px' }}>
+                        Shadow is a full-featured cloud PC with dedicated
+                        storage that you can access from any device at any time.
+                        Bring your own games with progress and achievements from
+                        Steam, Epic Games Store, GOG, Origin, Uplay, Battle.net,
+                        etc. or install new ones. Our datacenters are always up
+                        to date, so you can focus on gaming.
+                      </Typography>
+                    </Block>
 
                     <Button
                       outline
@@ -261,17 +220,13 @@ const Homepage = () => {
 
       <Block className={[Styles.sectionPrelist]}>
         <Container>
-          <Block flex>
-            <Block>
+          <Block flex wrap>
+            <Block className={[Styles.headingPlay]}>
               <Typography h1 color='#FFFFFF' textLeft>
-                PLAY THE LATEST GAMES
+                PLAY THE LATEST GAMES AT 60 FPS
               </Typography>
 
-              <Block flex>
-                <Typography h1 color='#FFFFFF' textLeft>
-                  AT 60 FPS
-                </Typography>
-
+              <Block flex wrap>
                 <Typography
                   h1
                   color='#ff5733'

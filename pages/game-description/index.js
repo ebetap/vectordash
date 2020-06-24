@@ -43,7 +43,7 @@ const GameDescription = (props) => {
 
           <Block className={[Styles.contentHeader]}>
             <Container>
-              <Block flex wrap alignCenter>
+              <Block flex wrap alignCenter className={[Styles.labelTop]}>
                 <Label
                   big
                   textLabel='Recommended'
@@ -130,7 +130,7 @@ const GameDescription = (props) => {
               Description
             </Typography>
 
-            <Block flex justifyBetween style={{ marginTop: '25px' }}>
+            <Block flex wrap justifyBetween style={{ marginTop: '25px' }}>
               <Block className={[Styles.sectionLeft]}>
                 <Block w100>
                   <Typography sourceSansPro paragraph>
@@ -157,6 +157,7 @@ const GameDescription = (props) => {
                   {/* TAB NAV */}
                   <Block
                     flex
+                    wrap
                     justifyBetween
                     alignCenter
                     w100

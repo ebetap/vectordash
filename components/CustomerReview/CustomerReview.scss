@@ -4,6 +4,10 @@
   padding: 25px 53px;
   border-radius: 8px;
   min-height: 180px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .reviewAvatar {
@@ -28,6 +32,10 @@
   border-radius: 30px;
   transition: all 0.5s;
   margin-right: 13px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 
   img {
     max-width: 20px;
