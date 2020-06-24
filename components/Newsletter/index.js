@@ -6,7 +6,13 @@ const Newsletter = () => {
   return (
     <Block className={[Styles.newsletter]}>
       <Container>
-        <Block flex w100 justifyCenter alignCenter>
+        <Block
+          flex
+          wrap
+          w100
+          justifyCenter
+          alignCenter
+          className={[Styles.header]}>
           <Typography color='#FFFFFF' extraBold size={30}>
             JOIN
           </Typography>

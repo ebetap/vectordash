@@ -1,6 +1,12 @@
 .headerAbout {
   min-height: 637px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
+
+  @media (max-width: 767px) {
+    height: 100vh;
+  }
 
   img {
     position: absolute;
@@ -16,9 +22,38 @@
   position: absolute;
   left: 50%;
   top: 44%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   z-index: 1;
+
+  @media (max-width: 767px) {
+    & > div {
+      & > div {
+        font-size: 29px !important;
+        line-height: 46px;
+      }
+
+      &:nth-child(2) {
+        font-size: 18px !important;
+        max-width: 70%;
+        margin: auto;
+        line-height: unset;
+
+        & > div {
+          font-size: 18px !important;
+          line-height: 24px;
+        }
+      }
+
+      &:last-child {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
 }
 
 .sectionAbout {
@@ -35,6 +70,11 @@
   width: 23.5%;
   flex: 0 0 23.5%;
   margin-bottom: 25px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    flex: 0 0 100%;
+  }
 }
 
 .teamItem {
@@ -45,6 +85,11 @@
 
   &:nth-child(4n + 0) {
     margin-right: 0;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    flex: 0 0 100%;
   }
 }
 

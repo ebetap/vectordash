@@ -6,7 +6,7 @@ const ContactSupport = () => {
   return (
     <Block className={[Styles.newsletter]}>
       <Container>
-        <Block flex w100 justifyCenter alignCenter>
+        <Block flex w100 justifyCenter alignCenter className={[Styles.heading]}>
           <Typography color='#FFFFFF' extraBold size={30}>
             GET IN TOUCH
           </Typography>

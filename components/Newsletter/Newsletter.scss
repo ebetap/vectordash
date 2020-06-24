@@ -6,6 +6,14 @@
 
 .wrapperInput {
   margin-top: 40px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+
+    & > div {
+      width: 100%;
+    }
+  }
 }
 
 .inputNewsletter {
@@ -20,6 +28,18 @@
   font-size: 17px;
   padding-left: 20px;
   font-family: 'Source Sans Pro', sans-serif !important;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #50628b;
+  }
+
+  &::-ms-input-placeholder {
+    color: #50628b;
+  }
 
   &::placeholder {
     color: #50628b;

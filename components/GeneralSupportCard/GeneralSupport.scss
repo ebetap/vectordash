@@ -14,8 +14,16 @@
   border-radius: 50%;
   margin-right: 28px;
 
+  @media (max-width: 767px) {
+    background: unset;
+  }
+
   img {
     max-width: 25px;
+
+    @media (max-width: 767px) {
+      max-width: 40px;
+    }
   }
 }
 

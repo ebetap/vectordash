@@ -1,6 +1,12 @@
 .headerSupport {
   min-height: 637px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
+
+  @media (max-width: 767px) {
+    min-height: 100vh;
+  }
 
   img {
     position: absolute;
@@ -15,7 +21,30 @@
 .contentHeader {
   left: 50%;
   top: 40%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transform: translate(-50%, -40%);
   transform: translate(-50%, -40%);
+
+  @media (max-width: 767px) {
+    & > div {
+      font-size: 29px !important;
+      line-height: 46px;
+
+      &:nth-child(3) {
+        font-size: 18px !important;
+        max-width: 70%;
+        margin: auto;
+        line-height: unset;
+      }
+
+      &:last-child {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
 }
 
 .searchBox {
@@ -29,6 +58,19 @@
   font-weight: 500;
   border: 0;
   box-shadow: 0 24px 30px 0 rgba(63, 23, 159, 0.18);
+
+  @media (max-width: 767px) {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #50628b;
+  }
+
+  &::-ms-input-placeholder {
+    color: #50628b;
+  }
 
   &::placeholder {
     color: #50628b;
@@ -72,6 +114,12 @@
   margin-right: 2%;
 
   &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    flex: 0 0 100%;
     margin-right: 0;
   }
 }

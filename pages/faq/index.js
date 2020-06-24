@@ -90,7 +90,7 @@ const FAQ = (props) => {
 
       <Block className={[Styles.sectionContentFAQ]}>
         <Container>
-          <Block flex justifyBetween>
+          <Block flex wrap justifyBetween>
             <Block className={[Styles.sectionLeft]}>
               <Typography color='#FFFFFF' size={30} bold>
                 Vectordash FAQs
