@@ -1,4 +1,5 @@
 import Styles from './Block.scss';
+import { ref } from 'yup';
 
 const Block = (props) => {
   const {
@@ -21,6 +22,7 @@ const Block = (props) => {
     children,
     style,
     className,
+    refs,
     ...blockProps
   } = props;
 
@@ -50,6 +52,7 @@ const Block = (props) => {
 
   return (
     <div
+      ref={refs}
       className={classNames}
       style={{ width: w100 && w100, ...style }}
       {...blockProps}>

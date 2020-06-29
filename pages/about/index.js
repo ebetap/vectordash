@@ -41,7 +41,7 @@ const About = (props) => {
             </Typography>
 
             <Button
-              small
+              // small
               style={{
                 marginTop: '27px',
                 fontWeight: 'bold',

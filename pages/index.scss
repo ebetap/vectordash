@@ -40,6 +40,10 @@
   @media (max-width: 767px) {
     bottom: -50px;
   }
+
+  @media screen and(max-width:375px) {
+    bottom: -100px;
+  }
 }
 
 .inner {
@@ -56,6 +60,10 @@
 
   @media (max-width: 767px) {
     padding-top: 80px;
+  }
+
+  @media screen and(max-width:375px) {
+    padding-top: 105px;
   }
 }
 
@@ -83,6 +91,11 @@
 .sectionPrelist {
   padding-top: 110px;
   background: #07070b;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 }
 
 .sectionGameList {
@@ -266,9 +279,101 @@
     -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
   transition: box-shadow 0.2s ease,
     -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
   transition: box-shadow 0.2s ease, -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
   transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease;
   transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease, -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
+    -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
   transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
     -webkit-transform 0.3s cubic-bezier(0.34, 2, 0.6, 1);
   transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease,
@@ -347,4 +452,28 @@
 }
 
 .headingPlay {
+  max-width: 42%;
+
+  @media screen and(max-width: 767px) {
+    max-width: 100%;
+
+    & > div {
+      text-align: center;
+    }
+  }
+}
+
+.subHeadingPlay {
+  max-width: 30%;
+  & > div {
+    line-height: 28px !important;
+  }
+
+  padding-bottom: 20px;
+
+  @media screen and(max-width: 767px) {
+    max-width: 100%;
+    margin-left: 0 !important;
+    text-align: center;
+  }
 }

@@ -226,51 +226,21 @@ const Homepage = () => {
                 PLAY THE LATEST GAMES AT 60 FPS
               </Typography>
 
-              <Block flex wrap>
-                <Typography
-                  h1
-                  color='#ff5733'
-                  style={{ marginLeft: '10px' }}
-                  textLeft>
-                  WITHOUT A
-                </Typography>
-              </Block>
-
               <Typography h1 color='#ff5733' textLeft>
-                GRAPHICS CARD
+                WITHOUT A GRAPHICS CARD
               </Typography>
             </Block>
 
-            <Block style={{ marginLeft: '50px' }}>
+            <Block
+              style={{ marginLeft: '50px' }}
+              className={[Styles.subHeadingPlay]}>
               <Typography
                 size={20}
                 height={15}
                 sourceSansPro
                 style={{ marginTop: '15px' }}>
-                Don't buy the hardware, just buy the
-              </Typography>
-
-              <Typography
-                size={20}
-                height={15}
-                sourceSansPro
-                style={{ marginTop: '15px' }}>
-                games. Bring your own gaming accounts to
-              </Typography>
-
-              <Typography
-                size={20}
-                height={15}
-                sourceSansPro
-                style={{ marginTop: '15px' }}>
-                Vectordash and launch a game without a
-              </Typography>
-
-              <Typography
-                size={20}
-                height={15}
-                sourceSansPro
-                style={{ marginTop: '15px' }}>
+                Don't buy the hardware, just buy the games. Bring your own
+                gaming accounts to Vectordash and launch a game without a
                 graphics card!
               </Typography>
             </Block>
@@ -356,7 +326,7 @@ const Homepage = () => {
         </Container>
 
         <Block flex justifyCenter w-100 style={{ marginTop: '50px' }}>
-          <Button small>Get Started</Button>
+          <Button>Get Started</Button>
         </Block>
       </Block>
 
