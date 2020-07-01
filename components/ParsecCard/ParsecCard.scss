@@ -1,0 +1,41 @@
+.parsecCards {
+  background: #1c1d20;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 4px;
+  padding: 25px;
+  width: 100%;
+
+  img {
+    width: 90px;
+    height: 90px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.customButton {
+  max-width: 100%;
+  font-size: 14px !important;
+  padding: 0 15px;
+  background: #e1e1e1;
+  color: #3d3e41;
+  font-weight: bold;
+
+  &:hover {
+    background: #ff5733;
+    color: #ffffff;
+  }
+
+  &:active {
+    background: #c33d20;
+  }
+}
+
+.downloadBtn {
+  margin-bottom: 30px;
+}

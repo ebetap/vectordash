@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useRouter } from 'next/router';
 
 import { Block, Typography, Button } from '../Base';
 import Checkbox from '../Checkbox';
@@ -7,9 +6,8 @@ import { Container } from 'next/app';
 
 import Styles from './Signin.scss';
 
-const SignIn = (props) => {
+const SignInParsec = (props) => {
   const { isOpen, onClose, onBackdropPress } = props;
-  const router = useRouter();
 
   const [showPassword, setShowPassword] = useState(false);
 
@@ -132,12 +130,7 @@ const SignIn = (props) => {
                   <Checkbox />
                 </Block>
 
-                <Button
-                  small
-                  className={[Styles.customButton]}
-                  onClick={() =>
-                    router.push('/dashboard').then(() => window.scrollTo(0, 0))
-                  }>
+                <Button small className={[Styles.customButton]}>
                   Sign In
                 </Button>
               </Container>
@@ -149,10 +142,10 @@ const SignIn = (props) => {
   );
 };
 
-SignIn.defaultProps = {
+SignInParsec.defaultProps = {
   isOpen: false,
   onClose: () => {},
   onBackdropPress: () => {},
 };
 
-export default SignIn;
+export default SignInParsec;

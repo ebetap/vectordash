@@ -13,7 +13,7 @@ import SignUp from '../Signup';
 import { useOnClickOutside } from '../../utils/Helpers';
 
 const Navigation = (props) => {
-  const { navTransparent } = props;
+  const { navTransparent, profile } = props;
   const router = useRouter();
   const { pathname } = router;
   const ref = useRef();
@@ -201,6 +201,7 @@ const Navigation = (props) => {
 
 Navigation.defaultProps = {
   navTransparent: false,
+  profile: false,
 };
 
 export default Navigation;

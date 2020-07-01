@@ -314,3 +314,42 @@ export const genericActivity = [
     subTitle: 'Cras quis nulla commodo aliquam lectus sed blandit augue Cras .',
   },
 ];
+
+export const parsecDownloads = [
+  {
+    image: '/static/img/windows.png',
+    OS: 'Windows',
+    description: 'Windows 7+ 64-bit or 32-bit',
+    url: 'https://builds.parsecgaming.com/package/parsec-windows32.exe',
+  },
+  {
+    image: '/static/img/apple.png',
+    OS: 'macOs',
+    description: 'macOS 10.9+',
+    url: 'https://builds.parsecgaming.com/package/parsec-macos.pkg',
+  },
+  {
+    image: '/static/img/rasp.png',
+    OS: 'Raspberry Pi 3',
+    description: 'Raspbian',
+    url: 'https://builds.parsecgaming.com/package/parsec-rpi.deb',
+  },
+  {
+    image: '/static/img/linux.png',
+    OS: 'Linux',
+    description: 'Ubuntu 18.04 LTS Desktop',
+    url: 'https://builds.parsecgaming.com/package/parsec-linux.deb',
+  },
+  {
+    image: '/static/img/android.png',
+    OS: 'Android',
+    description: 'Lolipop +',
+    url: 'https://play.google.com/store/apps/details?id=tv.parsec.client',
+  },
+  {
+    image: '/static/img/chrome.png',
+    OS: 'Web',
+    description: 'Google Chrome',
+    url: 'https://app.parsecgaming.com',
+  },
+];

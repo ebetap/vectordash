@@ -1,0 +1,149 @@
+.paymentContent {
+  min-height: 100vh;
+  background: #07070b;
+  padding-top: 150px;
+}
+
+.step {
+  margin-bottom: 35px;
+  img {
+    max-width: 60px;
+  }
+}
+
+.pembatas {
+  width: 73%;
+  height: 1px;
+  background: #e1e1e1;
+}
+
+.ccVendorItem {
+  background: #ffffff;
+  max-width: 23.5%;
+  flex: 0 0 23.5%;
+  padding: 10px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  position: relative;
+
+  &:last-child {
+    img {
+      max-width: 100px;
+    }
+  }
+
+  img {
+    max-width: 90px;
+    height: 35px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+}
+
+.allCC {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.ccVendorItemActive {
+  border: 1px solid #ff5733;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background: url('/static/img/cc-active.png');
+    background-size: contain;
+    top: -8px;
+    right: -3px;
+  }
+}
+
+.wrapperInput {
+  margin-bottom: 32px;
+
+  label {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    padding-left: 20px;
+  }
+
+  input {
+    width: 100%;
+    background: #ffffff;
+    outline: none;
+    border: 0;
+    margin-top: 10px;
+    color: #50628b;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    height: 53px;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 50px;
+
+    ::-webkit-input-placeholder {
+      color: #50628b;
+    }
+    ::-moz-placeholder {
+      color: #50628b;
+    }
+    :-ms-input-placeholder {
+      color: #50628b;
+    }
+    ::-ms-input-placeholder {
+      color: #50628b;
+    }
+    ::placeholder {
+      color: #50628b !important;
+    }
+  }
+}
+
+.half {
+  max-width: 48.5%;
+  flex: 0 0 48.5%;
+}
+
+.bottomText {
+  padding-bottom: 15px;
+}
+
+.agreement {
+  margin-top: 20px;
+  cursor: pointer;
+  img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+.buttonAction {
+  margin-top: 40px;
+}
+
+.customButton {
+  margin-right: 20px;
+  padding: 0 45px;
+}
+
+.customButtonLeft {
+  background: #1c1d20;
+}
+
+.listParsec {
+  margin-top: 35px;
+}
+
+.parsecItem {
+  max-width: 31.5%;
+  flex: 0 0 31.5%;
+  margin-bottom: 23px;
+}

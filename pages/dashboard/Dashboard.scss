@@ -1,0 +1,36 @@
+.sectionContent {
+  min-height: 100vh;
+  background: #07070b;
+  padding-top: 170px;
+}
+
+.tryNow {
+  background: #ff5733;
+  padding: 14px 25px;
+  border-radius: 5px;
+}
+
+.customBtnTry {
+  background: #ffffff !important;
+  color: #ff5733 !important;
+}
+
+.customHeadMenu {
+  padding: 0 20px;
+  min-height: 55px;
+
+  & > div {
+    max-width: 100% !important;
+  }
+}
+
+.itemGames {
+  margin-bottom: 25px;
+  max-width: 23.5%;
+  flex: 0 0 23.5%;
+  margin-right: 2%;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
