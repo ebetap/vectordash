@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import Router, { useRouter } from 'next/router';
 
 import { Block, Typography, Button } from '../../../../components/Base';
 import Layout from '../../../../layouts/Default';
@@ -207,7 +207,11 @@ const Payment = () => {
                   small
                   className={[Styles.customButton]}
                   style={{ height: '47px' }}
-                  onClick={() => router.push('/dashboard/complete-profile/2')}>
+                  onClick={() =>
+                    router
+                      .push('/dashboard/complete-profile/download-parsec')
+                      .then(() => window.scrollTo(0, 0))
+                  }>
                   Continue
                 </Button>
               </Block>

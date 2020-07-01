@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Router from 'next/router';
 
 import { Block, Typography, Button } from '../../components/Base';
 import Layout from '../../layouts/Default';
@@ -49,7 +50,11 @@ const Dashboard = () => {
 
             <Button
               className={[Styles.customBtnTry]}
-              onClick={() => router.push('/dashboard/complete-profile/1')}>
+              onClick={() =>
+                router
+                  .push('/dashboard/complete-profile/credit-card')
+                  .then(() => window.scrollTo(0, 0))
+              }>
               Try Now
             </Button>
           </Block>
