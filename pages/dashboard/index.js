@@ -9,6 +9,7 @@ import { Tabs, TabContent } from '../../components/Base/Tabs';
 import Styles from './Dashboard.scss';
 import { dummyGames } from '../../constants/dummy';
 import GameCard from '../../components/GameCard';
+import SignInParsec from '../../components/SigninParsec';
 
 const Dashboard = () => {
   const router = useRouter();
@@ -24,16 +25,33 @@ const Dashboard = () => {
     'More Games',
   ]);
 
+  const [showSignParsec, setShowSignParsec] = useState(false);
+
   return (
     <Layout navTransparent>
       <Block className={[Styles.sectionContent]}>
+        <SignInParsec
+          isOpen={showSignParsec}
+          onBackdropPress={() => {}}
+          onClose={() => setShowSignParsec(false)}
+        />
+
         <Container>
-          <Block flex justifyBetween alignCenter className={[Styles.tryNow]}>
+          <Block
+            flex
+            wrap
+            justifyBetween
+            alignCenter
+            className={[Styles.tryNow]}>
             <Typography bold size={16} color='#ffffff'>
               Try free for a day! Get started NOW for limited-time discount!
             </Typography>
 
-            <Button className={[Styles.customBtnTry]}>Try Now</Button>
+            <Button
+              className={[Styles.customBtnTry]}
+              onClick={() => router.push('/dashboard/complete-profile/1')}>
+              Try Now
+            </Button>
           </Block>
 
           <Block flex alignCenter style={{ marginTop: '35px' }}>
@@ -66,9 +84,7 @@ const Dashboard = () => {
                           play
                           description={false}
                           data={data}
-                          onPlayClicked={() =>
-                            router.push('/dashboard/complete-profile/1')
-                          }
+                          onPlayClicked={() => setShowSignParsec(true)}
                         />
                       </Block>
                     ))}

@@ -8,15 +8,18 @@ import Styles from '../Payment.scss';
 import Container from '../../../../components/Base/Container';
 import ParsecCard from '../../../../components/ParsecCard';
 import { parsecDownloads } from '../../../../constants/dummy';
+import { useWindowSize } from '../../../../utils/Helpers';
 
 const DownloadParsec = () => {
   const router = useRouter();
+
+  const { width } = useWindowSize();
 
   return (
     <Layout navTransparent>
       <Block className={[Styles.paymentContent]}>
         <Container>
-          <Container width={55}>
+          <Container width={width <= 767 ? 80 : 55}>
             <Block flex alignCenter justifyBetween className={[Styles.step]}>
               <img src='/static/img/check-active.png' />
 
@@ -26,22 +29,26 @@ const DownloadParsec = () => {
             </Block>
           </Container>
 
-          <Block flex justifyCenter alignCenter className={[Styles.title]}>
-            <Typography textCenter bold size={32} style={{ fontWeight: '900' }}>
+          <Block flex wrap justifyCenter alignCenter className={[Styles.title]}>
+            <Typography
+              textCenter
+              bold
+              size={width <= 767 ? 26 : 32}
+              style={{ fontWeight: '900' }}>
               DOWNLOAD PARSEC
             </Typography>
 
             <Typography
               textCenter
               bold
-              size={32}
+              size={width <= 767 ? 26 : 32}
               color='#ff5733'
               style={{ fontWeight: '900', marginLeft: '10px' }}>
               TO PLAY
             </Typography>
           </Block>
 
-          <Container width={50}>
+          <Container width={width <= 767 ? 95 : 60}>
             <Typography
               color='#e1e1e1'
               size={17}
@@ -56,7 +63,7 @@ const DownloadParsec = () => {
             </Typography>
           </Container>
 
-          <Container width={80}>
+          <Container width={width <= 767 ? 95 : 80}>
             <Block flex wrap justifyBetween className={[Styles.listParsec]}>
               {parsecDownloads.map((data, idx) => (
                 <Block key={idx} relative className={[Styles.parsecItem]}>

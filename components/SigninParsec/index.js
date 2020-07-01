@@ -4,7 +4,7 @@ import { Block, Typography, Button } from '../Base';
 import Checkbox from '../Checkbox';
 import { Container } from 'next/app';
 
-import Styles from './Signin.scss';
+import Styles from './SigninParsec.scss';
 
 const SignInParsec = (props) => {
   const { isOpen, onClose, onBackdropPress } = props;
@@ -26,21 +26,14 @@ const SignInParsec = (props) => {
               src='/static/img/ic-close.png'
             />
 
-            <Typography color='#07070b' size={45} style={{ fontWeight: '900' }}>
-              SIGN IN
+            <Typography color='#07070b' size={20} style={{ fontWeight: '900' }}>
+              ENTER PARSEC CREDENTIALS
             </Typography>
 
             <Block flex alignCenter className={[Styles.wrapperSubTitle]}>
-              <Typography sourceSansPro color='#07070b'>
-                Please sign in
-              </Typography>
-
-              <Typography sourceSansPro color='#ff5733' bold>
-                with your active account
-              </Typography>
-
-              <Typography sourceSansPro color='#07070b'>
-                to connect.
+              <Typography sourceSansPro color='#07070b' height={20}>
+                We don’t store these ! They’re used to generated a Parsec
+                session ID
               </Typography>
             </Block>
 
@@ -131,7 +124,7 @@ const SignInParsec = (props) => {
                 </Block>
 
                 <Button small className={[Styles.customButton]}>
-                  Sign In
+                  Submit
                 </Button>
               </Container>
             </Block>

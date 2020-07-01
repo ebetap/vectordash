@@ -6,18 +6,19 @@ import Layout from '../../../../layouts/Default';
 
 import Styles from '../Payment.scss';
 import Container from '../../../../components/Base/Container';
+import { useWindowSize } from '../../../../utils/Helpers';
 
 const Payment = () => {
   const router = useRouter();
 
   const [ccActive, setCCActive] = useState(0);
   const [agreement, setAgreement] = useState(false);
-
+  const { width } = useWindowSize();
   return (
     <Layout navTransparent>
       <Block className={[Styles.paymentContent]}>
         <Container>
-          <Container width={55}>
+          <Container width={width <= 767 ? 80 : 55}>
             <Block flex alignCenter justifyBetween className={[Styles.step]}>
               <img src='/static/img/1-c.png' />
 
@@ -28,14 +29,18 @@ const Payment = () => {
           </Container>
 
           <Block className={[Styles.title]}>
-            <Typography textCenter bold size={32} style={{ fontWeight: '900' }}>
+            <Typography
+              textCenter
+              bold
+              size={width <= 767 ? 26 : 32}
+              style={{ fontWeight: '900' }}>
               YOU WON'T BE CHARGED
             </Typography>
 
             <Typography
               textCenter
               bold
-              size={32}
+              size={width <= 767 ? 26 : 32}
               color='#ff5733'
               style={{ fontWeight: '900', marginTop: '3px' }}>
               UNTIL YOUR FREE TRIAL IS OVER
@@ -51,8 +56,8 @@ const Payment = () => {
             </Typography>
           </Block>
 
-          <Container width={60}>
-            <Block flex justifyBetween className={[Styles.allCC]}>
+          <Container width={width <= 767 ? 95 : 60}>
+            <Block flex wrap justifyBetween className={[Styles.allCC]}>
               <Block
                 className={[
                   Styles.ccVendorItem,
@@ -91,7 +96,7 @@ const Payment = () => {
             </Block>
           </Container>
 
-          <Container width={60}>
+          <Container width={width <= 767 ? 95 : 60}>
             <Block className={[Styles.wrapperInput]}>
               <label>Card Number *</label>
 
@@ -122,7 +127,7 @@ const Payment = () => {
             </Block>
           </Container>
 
-          <Container width={60}>
+          <Container width={width <= 767 ? 95 : 60}>
             <Block className={[Styles.bottomText]}>
               <Typography
                 color='#ff5733'

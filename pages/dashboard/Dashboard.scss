@@ -33,4 +33,24 @@
   &:nth-child(4n) {
     margin-right: 0;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 25px;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+}
+
+.tryNow {
+  @media (max-width: 767px) {
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & > div:first-child {
+      margin-bottom: 10px;
+    }
+  }
 }
