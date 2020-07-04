@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import Router from 'next/router';
 
 import { Block, Typography, Button } from '../../components/Base';
 import Layout from '../../layouts/Default';
@@ -11,6 +10,7 @@ import Styles from './Dashboard.scss';
 import { dummyGames } from '../../constants/dummy';
 import GameCard from '../../components/GameCard';
 import SignInParsec from '../../components/SigninParsec';
+import GameLoading from '../../components/GameLoading';
 
 const Dashboard = () => {
   const router = useRouter();
@@ -27,6 +27,7 @@ const Dashboard = () => {
   ]);
 
   const [showSignParsec, setShowSignParsec] = useState(false);
+  const [showLoadingGame, setShowLoadingGame] = useState(false);
 
   return (
     <Layout navTransparent>
@@ -35,6 +36,15 @@ const Dashboard = () => {
           isOpen={showSignParsec}
           onBackdropPress={() => {}}
           onClose={() => setShowSignParsec(false)}
+          onSubmitPress={() => {
+            setShowSignParsec(false);
+            setShowLoadingGame(true);
+          }}
+        />
+
+        <GameLoading
+          isOpen={showLoadingGame}
+          onCancel={() => setShowLoadingGame(false)}
         />
 
         <Container>

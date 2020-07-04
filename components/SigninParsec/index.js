@@ -7,7 +7,7 @@ import { Container } from 'next/app';
 import Styles from './SigninParsec.scss';
 
 const SignInParsec = (props) => {
-  const { isOpen, onClose, onBackdropPress } = props;
+  const { isOpen, onClose, onBackdropPress, onSubmitPress } = props;
 
   const [showPassword, setShowPassword] = useState(false);
 
@@ -123,7 +123,10 @@ const SignInParsec = (props) => {
                   <Checkbox />
                 </Block>
 
-                <Button small className={[Styles.customButton]}>
+                <Button
+                  small
+                  className={[Styles.customButton]}
+                  onClick={() => onSubmitPress()}>
                   Submit
                 </Button>
               </Container>
@@ -139,6 +142,7 @@ SignInParsec.defaultProps = {
   isOpen: false,
   onClose: () => {},
   onBackdropPress: () => {},
+  onSubmitPress: () => {},
 };
 
 export default SignInParsec;

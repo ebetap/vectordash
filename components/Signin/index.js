@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 import { Block, Typography, Button } from '../Base';
 import Checkbox from '../Checkbox';
-import { Container } from 'next/app';
+import Container from '../../components/Base/Container';
 
 import Styles from './Signin.scss';
 
@@ -47,7 +47,7 @@ const SignIn = (props) => {
             </Block>
 
             <Block className={[Styles.formSignin]}>
-              <Container>
+              <Container width={100}>
                 <Block relative className={[Styles.formField]}>
                   <Block relative style={{ width: 'max-content' }}>
                     <Typography

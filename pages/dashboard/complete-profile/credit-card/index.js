@@ -14,6 +14,7 @@ const Payment = () => {
   const [ccActive, setCCActive] = useState(0);
   const [agreement, setAgreement] = useState(false);
   const { width } = useWindowSize();
+  
   return (
     <Layout navTransparent>
       <Block className={[Styles.paymentContent]}>
