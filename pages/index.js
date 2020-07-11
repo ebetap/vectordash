@@ -105,7 +105,7 @@ const Homepage = () => {
             </Block>
 
             <Block flex justifyCenter w100 className={[Styles.ctaButton]}>
-              <Button>Get Started</Button>
+              <Button large>Get Started</Button>
             </Block>
           </Block>
         </Container>

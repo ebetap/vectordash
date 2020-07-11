@@ -57,6 +57,7 @@ Button.defaultProps = {
   isWhite: false,
   leftIcon: false,
   rightIcon: false,
+  large: false,
   hoverEffect: true,
 };
 
