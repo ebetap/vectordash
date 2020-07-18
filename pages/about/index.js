@@ -49,7 +49,7 @@ const About = (props) => {
             <Button
               // small
               style={{
-                marginTop: '27px',
+                marginTop: '110px',
                 fontWeight: 'bold',
                 fontSize: '14px!important',
               }}>
