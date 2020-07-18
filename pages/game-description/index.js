@@ -13,6 +13,8 @@ import logoNoText from '../../static/img/logo-not-text.png';
 import Styles from './GameDescription.scss';
 import Newsletter from '../../components/Newsletter';
 
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const GameCard = dynamic(() => import('../../components/GameCard'));
 const CustomerReview = dynamic(() => import('../../components/CustomerReview'));
 const CardGamePlay = dynamic(() => import('../../components/CardGamePlay'));

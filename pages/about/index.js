@@ -7,12 +7,18 @@ import Container from '../../components/Base/Container';
 import CardGamePlay from '../../components/CardGamePlay';
 import { cardMissions, ourTeam } from '../../constants/dummy';
 import CardTeam from '../../components/CardTeam';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const About = (props) => {
   return (
     <Layout navTransparent>
       <Block relative className={[Styles.headerAbout]}>
-        <img alt='Cover' src='/static/img/cover-about.png' />
+        <LazyLoadImage
+          effect='blur'
+          alt='Cover'
+          src='/static/img/cover-about.png'
+        />
 
         <Block className={[Styles.contentHeader]}>
           <Block flex alignCenter justifyCenter>

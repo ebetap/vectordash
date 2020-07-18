@@ -9,11 +9,15 @@ import { genericActivity } from '../../constants/dummy';
 import ActivityCard from '../../components/ActivityCard';
 import Articles from '../../components/Articles';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const GenericPage = (props) => {
   return (
     <Layout>
       <Block relative className={[Styles.sectionHeader]}>
-        <img
+        <LazyLoadImage
+          effect='blur'
           className={[Styles.background]}
           src='/static/img/cover-generic.png'
         />

@@ -7,6 +7,8 @@ import Container from '../../components/Base/Container';
 import GameCard from '../../components/GameCard';
 import QNAs from '../../components/QNA';
 
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import Styles from './Faq.scss';
 import {
   popularQuestion,

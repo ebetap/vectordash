@@ -7,12 +7,18 @@ import GeneralSupportCard from '../../components/GeneralSupportCard';
 import { generalSupports, recentActivity } from '../../constants/dummy';
 import ActivityCard from '../../components/ActivityCard';
 import ContactSupport from '../../components/ContactSupport';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Support = (props) => {
   return (
     <Layout>
       <Block relative className={[Styles.headerSupport]}>
-        <img alt='Cover' src='/static/img/cover-support.png' />
+        <LazyLoadImage
+          effect='blur'
+          alt='Cover'
+          src='/static/img/cover-support.png'
+        />
 
         <Block absolute className={[Styles.contentHeader]}>
           <Typography color='#FFFFFF' bigTitle textCenter>
