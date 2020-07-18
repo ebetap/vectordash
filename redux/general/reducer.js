@@ -1,7 +1,8 @@
 import * as types from './types';
 
 const initialState = {
-  loading: false
+  loading: false,
+  showSignupModal: false,
 };
 
 const generalReducer = (state = initialState, action) => {
@@ -11,7 +12,14 @@ const generalReducer = (state = initialState, action) => {
     case types.SET_LOADING: {
       return {
         ...state,
-        loading: payload
+        loading: payload,
+      };
+    }
+
+    case types.SET_SIGNUP_MODAL: {
+      return {
+        ...state,
+        showSignupModal: payload,
       };
     }
 

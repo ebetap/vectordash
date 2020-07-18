@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { useDispatch } from 'react-redux';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import DefaultLayout from '../layouts/Default';
@@ -15,6 +16,8 @@ import { dummyGames } from '../constants/dummy';
 
 const Homepage = () => {
   const router = useRouter();
+  const dispatch = useDispatch();
+
   const [tabs] = useState([
     'Play the games you want',
     'The most advanced cloud gaming solution',
@@ -105,7 +108,13 @@ const Homepage = () => {
             </Block>
 
             <Block flex justifyCenter w100 className={[Styles.ctaButton]}>
-              <Button large>Get Started</Button>
+              <Button
+                large
+                onClick={() =>
+                  dispatch({ type: 'SET_SIGNUP_MODAL', payload: true })
+                }>
+                Get Started
+              </Button>
             </Block>
           </Block>
         </Container>

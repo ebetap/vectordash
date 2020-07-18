@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -17,10 +18,12 @@ const Navigation = (props) => {
   const router = useRouter();
   const { pathname } = router;
   const ref = useRef();
+  const dispatch = useDispatch();
+  const { showSignupModal } = useSelector((state) => state.general);
 
   const [scrollPosition, setSrollPosition] = useState(0);
   const [showSignIn, setShowSignIn] = useState(false);
-  const [showSignUp, setShowSignUp] = useState(false);
+  // const [showSignUp, setShowSignUp] = useState(false);
   const [showSideMenu, setShowSideMenu] = useState(false);
 
   useOnClickOutside(ref, () => setShowSideMenu(false));
@@ -49,9 +52,11 @@ const Navigation = (props) => {
       />
 
       <SignUp
-        isOpen={showSignUp}
-        onBackdropPress={() => setShowSignUp(false)}
-        onClose={() => setShowSignUp(false)}
+        isOpen={showSignupModal}
+        onBackdropPress={() =>
+          dispatch({ type: 'SET_SIGNUP_MODAL', payload: false })
+        }
+        onClose={() => dispatch({ type: 'SET_SIGNUP_MODAL', payload: false })}
       />
 
       <Container>
@@ -128,7 +133,7 @@ const Navigation = (props) => {
               style={{ marginTop: '10px' }}
               onClick={() => {
                 setShowSideMenu(false);
-                setShowSignUp(true);
+                dispatch({ type: 'SET_SIGNUP_MODAL', payload: true });
               }}>
               Get Started
             </Button>
@@ -187,7 +192,9 @@ const Navigation = (props) => {
 
             <Block className={[Styles.wrapperMenuItem]}>
               <Button
-                onClick={() => setShowSignUp(true)}
+                onClick={() =>
+                  dispatch({ type: 'SET_SIGNUP_MODAL', payload: true })
+                }
                 isWhite={navTransparent ? true : false}>
                 Sign Up
               </Button>
