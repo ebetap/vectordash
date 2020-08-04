@@ -7,7 +7,7 @@
 3. `yarn install`
 4. `yarn dev`
 
-# Generate static HTML Files
+# How to generate static HTML Files
 
 1. Clone the project repository
 2. Open terminal and goto project folder
