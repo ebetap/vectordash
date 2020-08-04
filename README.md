@@ -26,4 +26,4 @@
 # How to add static images and use it
 
 1. Copy your static images to `static/img` folder
-2. Example how to use it `<img src="/static/image_name.png" />`
+2. Example how to use it `<img src="/static/img/image_name.png" />`
