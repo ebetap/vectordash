@@ -12,7 +12,7 @@
 1. Clone the project repository
 2. Open terminal and goto project folder
 3. `yarn install`
-4. `yarn deploy` (it will be generate HTML files in `out` folder)
+4. `yarn deploy` (it will generate HTML files in `out` folder)
 5. Now you can serve the `out` folder using your own web server
 
 # How to add global css files
